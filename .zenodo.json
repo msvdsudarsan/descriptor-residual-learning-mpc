@@ -1,0 +1,31 @@
+{
+  "title": "Code and data for: Structure-preserving residual learning and predictive control of nonlinear descriptor power-network models",
+  "upload_type": "software",
+  "description": "Python code, MATPOWER case9 and case39 input files, generated tables (CSV), figures and tests that reproduce all numerical results of the manuscript submitted to Communications in Nonlinear Science and Numerical Simulation.",
+  "creators": [
+    {
+      "name": "Madhyannapu, Sri Venkata Durga Sudarsan",
+      "affiliation": "Dr. RVR NRI Institute of Technology (Deemed to be University), Vijayawada, Andhra Pradesh, India",
+      "orcid": "0009-0001-2126-6428"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "differential-algebraic equations",
+    "descriptor systems",
+    "model predictive control",
+    "residual learning",
+    "power networks",
+    "MATPOWER"
+  ],
+  "access_right": "open",
+  "version": "1.0.0",
+  "publication_date": "2026-10-06",
+  "related_identifiers": [
+    {
+      "relation": "isSupplementTo",
+      "identifier": "https://github.com/YOUR-GITHUB-USERNAME/descriptor-residual-learning-mpc",
+      "scheme": "url"
+    }
+  ]
+}
