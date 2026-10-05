@@ -15,7 +15,7 @@ Code, data and results for the manuscript submitted to *Communications in Nonlin
 
 ## Reproduce
 ```bash
-git clone https://github.com/YOUR-GITHUB-USERNAME/descriptor-residual-learning-mpc.git && cd descriptor-residual-learning-mpc
+git clone https://github.com/msvdsudarsan/descriptor-residual-learning-mpc.git && cd descriptor-residual-learning-mpc
 pip install -r requirements.txt
 bash run_all.sh        # run time depends on the hardware; the scalar closed-loop stage and case39 are the longest
 ```
