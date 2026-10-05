@@ -1,0 +1,43 @@
+/home/claude/w/GITHUB/code/network_benchmark.py:179: NumbaPerformanceWarning: [1m[1m[1m'@' is faster on contiguous arrays, called on (Array(float64, 2, 'A', False, aligned=True), Array(float64, 1, 'C', False, aligned=True))[0m[0m[0m
+  th2 = tangent_theta(theta, Jinv, delta, d2, gbus, bg) if mode == 0 else solve_theta(theta, d2, Pd, lf, lt, lb, gbus, bg, 1e-10, 12)[0]
+case9 q0 0.023839465238203714 [0.00676107 0.01709806 0.0115611  0.00595918 0.0049515  0.01163327
+ 0.01725652 0.02383947 0.01380568 0.01194387]
+case9 val (0.25, 0.0, 0.6687046016574681)
+case9 val (0.25, 0.5, 0.6686318871072678)
+case9 val (0.25, 1.0, 0.6685649634015516)
+case9 val (0.25, 2.0, 0.668448443031916)
+case9 val (0.5, 0.0, 0.6694895312741501)
+case9 val (0.5, 0.5, 0.6694442729537705)
+case9 val (0.5, 1.0, 0.6694047596292664)
+case9 val (0.5, 2.0, 0.6693429227958224)
+case9 val (1.0, 0.0, 0.6710587627543159)
+case9 val (1.0, 0.5, 0.6710160388740427)
+case9 val (1.0, 1.0, 0.6709790558079762)
+case9 val (1.0, 2.0, 0.6709222669743452)
+case9 val (2.0, 0.0, 0.6711188727769242)
+case9 val (2.0, 0.5, 0.6710761681080717)
+case9 val (2.0, 1.0, 0.6710392042214591)
+case9 val (2.0, 2.0, 0.670982453651052)
+case9 chosen 0.25 0.0
+case9 no change [np.float64(0.5), np.float64(0.069), np.float64(0.069), np.float64(0.5), np.float64(0.139), np.float64(0.139), np.float64(1.0), 1.0, 0.0, 0.0, 0.0, nan]
+case9 false-shift stress (8% load 3x noise) [np.float64(0.526), np.float64(0.161), np.float64(0.161), np.float64(0.526), np.float64(0.305), np.float64(0.305), np.float64(1.0), 1.0, 0.0, 0.0, 0.0, nan]
+case9 announced mu 0.8 [np.float64(0.397), np.float64(0.09), np.float64(0.09), np.float64(0.397), np.float64(0.226), np.float64(0.226), np.float64(1.0), 1.0, 0.0, 0.0, 0.0, nan]
+case9 unannounced mu 0.8 [np.float64(1.157), np.float64(0.531), np.float64(1.037), np.float64(1.157), np.float64(0.459), np.float64(0.897), np.float64(1.953), 0.0, 0.0, 1.0, 0.0, 0.2]
+case9 announced mu 1.25 [np.float64(0.619), np.float64(0.098), np.float64(0.098), np.float64(0.619), np.float64(0.159), np.float64(0.159), np.float64(1.0), 1.0, 0.0, 0.0, 0.0, nan]
+case9 unannounced mu 1.25 [np.float64(0.366), np.float64(0.714), np.float64(0.401), np.float64(0.366), np.float64(1.948), np.float64(1.096), np.float64(0.563), 0.0, 0.0, 1.0, 0.0, 0.167]
+case9 announced mu 1.5 [np.float64(0.749), np.float64(0.166), np.float64(0.166), np.float64(0.749), np.float64(0.222), np.float64(0.222), np.float64(1.0), 1.0, 0.0, 0.0, 0.0, nan]
+case9 unannounced mu 1.5 [np.float64(1.205), np.float64(2.043), np.float64(1.208), np.float64(1.205), np.float64(1.695), np.float64(1.002), np.float64(0.591), 0.0, 0.0, 1.0, 0.0, 0.1]
+case9 unann run 0 {'C0': 0.511, 'A0': 0.279, 'A2': 0.275, 'physics+projection': 0.279, 'SP-RTG': 0.275}
+case9 unann run 1 {'C0': 0.461, 'A0': 0.308, 'A2': 0.308, 'physics+projection': 0.308, 'SP-RTG': 0.308}
+case9 unann run 2 {'C0': 0.531, 'A0': 0.192, 'A2': 0.186, 'physics+projection': 0.192, 'SP-RTG': 0.186}
+case9 unann run 3 {'C0': 0.532, 'A0': 0.29, 'A2': 0.286, 'physics+projection': 0.29, 'SP-RTG': 0.286}
+case9 unann run 4 {'C0': 0.555, 'A0': 0.283, 'A2': 0.278, 'physics+projection': 0.283, 'SP-RTG': 0.278}
+case9 unann run 5 {'C0': 0.493, 'A0': 0.205, 'A2': 0.198, 'physics+projection': 0.205, 'SP-RTG': 0.198}
+case9 ann run 0 {'C0': 0.511, 'A0': 0.38, 'A2': 0.148, 'physics+projection': 0.38, 'SP-RTG': 0.148}
+case9 ann run 1 {'C0': 0.461, 'A0': 0.38, 'A2': 0.122, 'physics+projection': 0.38, 'SP-RTG': 0.122}
+case9 ann run 2 {'C0': 0.531, 'A0': 0.405, 'A2': 0.115, 'physics+projection': 0.405, 'SP-RTG': 0.115}
+case9 ann run 3 {'C0': 0.532, 'A0': 0.408, 'A2': 0.165, 'physics+projection': 0.408, 'SP-RTG': 0.165}
+case9 ann run 4 {'C0': 0.555, 'A0': 0.401, 'A2': 0.187, 'physics+projection': 0.401, 'SP-RTG': 0.187}
+case9 ann run 5 {'C0': 0.493, 'A0': 0.375, 'A2': 0.094, 'physics+projection': 0.375, 'SP-RTG': 0.094}
+case9 closed loop [('unannounced', 'C0', 0.5140577079351641, 1.4927943705877558, 12.060548980391255, 0.01675672778434192, nan), ('unannounced', 'A0', 0.2596676865613725, 7.8, 12.457812124047022, 15.64314913888249, nan), ('unannounced', 'A2', 0.2552435577793654, 7.8, 12.20270950359187, 7.438819191665718, nan), ('unannounced', 'physics+projection', 0.2596669731982063, 7.8, 12.457704753448596, 7.544168333330643, nan), ('unannounced', 'SP-RTG', 0.2552435577793654, 7.8, 12.20270950359187, 7.524684244448406, 0.005807835650438885), ('announced', 'C0', 0.5140577079351641, 1.4927943705877558, 12.060548980391255, 0.010163025005264595, nan), ('announced', 'A0', 0.39145509065092104, 4.324745827209809, 11.912672150428483, 25.26784466389434, nan), ('announced', 'A2', 0.13867236412855186, 5.64198797386356, 12.19939541742301, 10.013079361110991, nan), ('announced', 'physics+projection', 0.3914523596050136, 4.324795264458357, 11.912690990576786, 13.415081536115595, nan), ('announced', 'SP-RTG', 0.1386192297751554, 5.636498285396254, 12.199432010342997, 9.399211902780912, 0.9989178364133084)]
+done
