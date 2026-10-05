@@ -22,10 +22,10 @@
   "version": "1.0.0",
   "publication_date": "2026-10-06",
   "related_identifiers": [
-    {
-      "relation": "isSupplementTo",
-      "identifier": "https://github.com/YOUR-GITHUB-USERNAME/descriptor-residual-learning-mpc",
-      "scheme": "url"
-    }
-  ]
+  {
+    "relation": "isSupplementTo",
+    "identifier": "https://github.com/msvdsudarsan/descriptor-residual-learning-mpc",
+    "scheme": "url"
+  }
+]
 }
