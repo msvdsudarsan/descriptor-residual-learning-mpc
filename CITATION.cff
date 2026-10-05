@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite it as below."
+title: "Code and data for: Structure-preserving residual learning and predictive control of nonlinear descriptor power-network models"
+type: software
+authors:
+  - family-names: Madhyannapu
+    given-names: Sri Venkata Durga Sudarsan
+    orcid: "https://orcid.org/0009-0001-2126-6428"
+    affiliation: "Dr. RVR NRI Institute of Technology (Deemed to be University), Vijayawada, Andhra Pradesh, India"
+version: "1.0.0"
+date-released: "2026-10-06"
+license: MIT
+repository-code: "https://github.com/YOUR-GITHUB-USERNAME/descriptor-residual-learning-mpc"
+# After Zenodo mints the DOI, add:  doi: 10.5281/zenodo.XXXXXXX
