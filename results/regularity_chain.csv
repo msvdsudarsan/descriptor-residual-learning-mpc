@@ -1,0 +1,3 @@
+case,n_states,lambda_min_B,b_max,S_gamma_bound,psi_bound,max_dtheta_ddelta,max_dpsi_ddelta,max_fd_error,ratio_theta,ratio_psi
+case9,400,2.25003,10,5.13193,6.13193,1.73277,0.464642,1.58454e-07,0.337644,0.0757743
+case39,400,4.30233,36.6667,9.84096,10.841,2.02571,0.725712,1.1149e-07,0.205844,0.0669416

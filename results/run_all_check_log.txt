@@ -1,0 +1,11 @@
+ok test_scalar_baseline_is_misspecified
+ok test_scalar_global_index_one
+ok test_network_jacobian_bound
+ok test_newton_projection_consistency
+ok test_dispatch_balance
+ok test_conformal_quantile_small_n_is_max
+ok test_out_of_library_term_off_by_default
+ok test_lipschitz_chain_bound
+figures written to /home/claude/w/rerun/figures
+248 manuscript values, 0 differences
+Done. Tables: results/*.csv, figures: figures/*.pdf

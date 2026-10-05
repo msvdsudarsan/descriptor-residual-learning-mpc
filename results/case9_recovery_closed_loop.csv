@@ -1,0 +1,22 @@
+scenario,controller,w_rms_during,w_rms_after_restore,tau_min,tau_mean_after_restore
+mild 1.05,C0,0.3441088,nan,nan,nan
+mild 1.05,A0,0.17785195,nan,nan,nan
+mild 1.05,A2,0.072564333,nan,nan,nan
+mild 1.05,pp,0.17785193,nan,nan,nan
+mild 1.05,gate,0.017266529,nan,0.68601369,nan
+mild 1.05,rec,0.017914761,nan,0.88807526,nan
+mild 1.05,oracle,0.014882544,nan,nan,nan
+mild 1.10,C0,0.3607667,nan,nan,nan
+mild 1.10,A0,0.11445282,nan,nan,nan
+mild 1.10,A2,0.1396789,nan,nan,nan
+mild 1.10,pp,0.11445215,nan,nan,nan
+mild 1.10,gate,0.010820148,nan,0.3971357,nan
+mild 1.10,rec,0.023158977,nan,0.61952387,nan
+mild 1.10,oracle,0.017259394,nan,nan,nan
+recovery 1.10,C0,0.36198181,0.33465839,nan,nan
+recovery 1.10,A0,0.11211752,0.23667933,nan,nan
+recovery 1.10,A2,0.13877961,0.0170673,nan,nan
+recovery 1.10,pp,0.11211626,0.23667704,nan,nan
+recovery 1.10,gate,0.011641404,0.01499937,0.39213887,1
+recovery 1.10,rec,0.023315907,0.021117042,0.6096577,0.99504548
+recovery 1.10,oracle,0.017181825,0.015269489,nan,nan

@@ -1,0 +1,32 @@
+/home/claude/w/GITHUB/code/network_benchmark.py:179: NumbaPerformanceWarning: [1m[1m[1m'@' is faster on contiguous arrays, called on (Array(float64, 2, 'A', False, aligned=True), Array(float64, 1, 'C', False, aligned=True))[0m[0m[0m
+  th2 = tangent_theta(theta, Jinv, delta, d2, gbus, bg) if mode == 0 else solve_theta(theta, d2, Pd, lf, lt, lb, gbus, bg, 1e-10, 12)[0]
+case9 q0 0.023839465238203714
+case9 atlas gate mu 0.6
+case9 atlas gate mu 1.0
+case9 atlas gate mu 1.5
+case9 atlas gate mu 2.0
+case9 atlas gate mu 2.5
+case9 atlas gate mu 3.0
+case9 no change [0.491, 0.07, 0.07, 0.07, 0.07, 0.0, 0.0, nan, nan, nan, nan, nan, nan, nan, nan]
+case9 false-shift stress [0.504, 0.124, 0.124, 0.124, 0.124, 0.0, 0.0, nan, nan, nan, nan, nan, nan, nan, nan]
+case9 persistent mu 1.03 [0.425, 0.179, 0.159, 0.175, 0.161, 1.03, 0.0, 1.0, 0.283, 0.963, 0.1, nan, nan, nan]
+case9 persistent mu 1.05 [0.35, 0.175, 0.116, 0.143, 0.127, 1.05, 0.0, 1.0, 0.183, 0.894, 0.1, nan, nan, nan]
+case9 persistent mu 1.1 [0.221, 0.3, 0.131, 0.169, 0.141, 1.104, 0.0, 1.0, 0.1, 0.59, 0.133, nan, nan, nan]
+case9 persistent mu 0.8 [1.166, 0.543, 0.134, 1.046, 0.138, 0.799, 0.0, 1.0, 0.1, 0.299, 0.5, nan, nan, nan]
+case9 persistent mu 1.25 [0.37, 0.725, 0.101, 0.407, 0.108, 1.251, 0.0, 1.0, 0.1, 0.202, 0.5, nan, nan, nan]
+case9 persistent mu 1.5 [1.2, 1.992, 0.107, 1.203, 0.111, 1.499, 0.0, 1.0, 0.1, 0.033, 0.5, nan, nan, nan]
+case9 recovery mu 1.1 [0.199, 0.295, 0.114, 0.145, 0.115, 1.101, 0.0, 1.0, 0.1, 0.609, 0.1, 0.098, 1.0, 0.1]
+case9 recovery mu 1.25 [0.418, 0.756, 0.182, 0.452, 0.202, 1.25, 0.0, 1.0, 0.1, 0.211, 0.5, 0.136, 1.0, 0.067]
+case9 mild 1.05 run 0 {'C0': 0.3515, 'A0': 0.1772, 'A2': 0.0783, 'gate': 0.0209, 'rec': 0.0264, 'oracle': 0.0157}
+case9 mild 1.05 run 1 {'C0': 0.3296, 'A0': 0.1676, 'A2': 0.0741, 'gate': 0.0149, 'rec': 0.0108, 'oracle': 0.0108}
+case9 mild 1.05 run 2 {'C0': 0.3416, 'A0': 0.178, 'A2': 0.0736, 'gate': 0.0162, 'rec': 0.0118, 'oracle': 0.0129}
+case9 mild 1.05 run 3 {'C0': 0.3463, 'A0': 0.1827, 'A2': 0.0713, 'gate': 0.0165, 'rec': 0.0149, 'oracle': 0.0164}
+case9 mild 1.05 run 4 {'C0': 0.3381, 'A0': 0.1825, 'A2': 0.0697, 'gate': 0.0178, 'rec': 0.0257, 'oracle': 0.0186}
+case9 mild 1.05 run 5 {'C0': 0.3575, 'A0': 0.1792, 'A2': 0.0685, 'gate': 0.0173, 'rec': 0.018, 'oracle': 0.015}
+case9 mild 1.1 run 0 {'C0': 0.3686, 'A0': 0.1124, 'A2': 0.1422, 'gate': 0.012, 'rec': 0.0251, 'oracle': 0.0179}
+case9 mild 1.1 run 1 {'C0': 0.3455, 'A0': 0.1025, 'A2': 0.1533, 'gate': 0.0081, 'rec': 0.0163, 'oracle': 0.0112}
+case9 mild 1.1 run 2 {'C0': 0.3581, 'A0': 0.1168, 'A2': 0.14, 'gate': 0.0104, 'rec': 0.018, 'oracle': 0.0164}
+case9 mild 1.1 run 3 {'C0': 0.3631, 'A0': 0.1221, 'A2': 0.1378, 'gate': 0.0094, 'rec': 0.0212, 'oracle': 0.0196}
+case9 mild 1.1 run 4 {'C0': 0.3544, 'A0': 0.1195, 'A2': 0.1352, 'gate': 0.0113, 'rec': 0.0306, 'oracle': 0.0217}
+case9 mild 1.1 run 5 {'C0': 0.3749, 'A0': 0.1134, 'A2': 0.1295, 'gate': 0.0137, 'rec': 0.0277, 'oracle': 0.0167}
+done

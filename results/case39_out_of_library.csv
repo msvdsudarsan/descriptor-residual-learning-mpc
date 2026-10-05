@@ -1,0 +1,10 @@
+quantity,value
+ool_coefficient,0.15
+residual_rms_true_test,7.1156086
+residual_rms_error_after_fit,0.07317594
+error_reduction_percent,98.971614
+pred_ratio_A2_over_A0,0.21659828
+pred_ratio_lo,0.15563066
+pred_ratio_hi,0.27749912
+active_terms,106
+mean_window_max_abs_g_A2,4.0104676e-11

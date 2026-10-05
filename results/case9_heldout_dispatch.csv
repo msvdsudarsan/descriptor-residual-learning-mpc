@@ -1,0 +1,3 @@
+mu_after,rmse_A0,rmse_A2,rmse_oracle,rmse_gate,rmse_reconcile,mean_rho_estimate,detection_rate,detection_delay_s,min_trust
+1.1,0.19696116,0.29397165,0.10841205,0.12942354,0.18684204,1.0939335,1,0.1,0.50547055
+1.25,0.38120884,0.72654067,0.14407847,0.41314593,0.2218174,1.2516358,1,0.1,0.28329793

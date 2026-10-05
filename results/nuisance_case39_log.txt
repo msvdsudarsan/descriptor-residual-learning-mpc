@@ -1,0 +1,9 @@
+/home/claude/w/GITHUB/code/network_benchmark.py:179: NumbaPerformanceWarning: [1m[1m[1m'@' is faster on contiguous arrays, called on (Array(float64, 2, 'A', False, aligned=True), Array(float64, 1, 'C', False, aligned=True))[0m[0m[0m
+  th2 = tangent_theta(theta, Jinv, delta, d2, gbus, bg) if mode == 0 else solve_theta(theta, d2, Pd, lf, lt, lb, gbus, bg, 1e-10, 12)[0]
+case39 ('line_scale 0.85', 0.0, 0.8971741443477127, 0.013441930500215582, 0.22017437020778077)
+case39 ('line_scale 1.15', 0.0, 0.884025929796776, 0.01751357105449558, 0.2012392218461949)
+case39 ('inertia_scale 0.8', 0.00625, 0.8877639635946172, 0.06090679358686202, 0.2752876826359717)
+case39 ('inertia_scale 1.2', 0.0, 0.9761740371975254, 0.03539838976622822, 0.2602462876888976)
+case39 ('damping_scale 0.8', 0.0, 0.9238890346026556, 0.029037613621725744, 0.20531124757174576)
+case39 ('damping_scale 1.2', 0.0, 0.9516836613802837, 0.025175521127109635, 0.32447427887664343)
+case39 ('joint (lines 1.12, inertia 0.85, damping 1.15)', 0.0, 0.9476956557871948, 0.02009858484600935, 0.22648706806570262)

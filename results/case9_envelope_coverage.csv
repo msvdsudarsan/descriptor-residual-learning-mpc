@@ -1,0 +1,4 @@
+test_source,n_traj,cover_k5,cover_joint_k1_to_5
+static law,4,1,1
+MPC (A2),3,1,1
+closed-loop A2 realizations,6,1,1

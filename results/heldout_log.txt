@@ -1,0 +1,8 @@
+/home/claude/w/GITHUB/code/network_benchmark.py:179: NumbaPerformanceWarning: [1m[1m[1m'@' is faster on contiguous arrays, called on (Array(float64, 2, 'A', False, aligned=True), Array(float64, 1, 'C', False, aligned=True))[0m[0m[0m
+  th2 = tangent_theta(theta, Jinv, delta, d2, gbus, bg) if mode == 0 else solve_theta(theta, d2, Pd, lf, lt, lb, gbus, bg, 1e-10, 12)[0]
+case9 (1.1, 0.19696115655519159, 0.2939716452097478, 0.10841205382091229, 0.12942353760409178, 0.18684203560749685, 1.0939334722627054, 1.0, 0.1000000000000103, 0.5054705492633885)
+case9 (1.25, 0.38120883571464675, 0.7265406680841734, 0.1440784697254358, 0.41314593284619644, 0.2218174000551685, 1.2516358482054781, 1.0, 0.1000000000000103, 0.28329793178917834)
+/home/claude/w/GITHUB/code/network_reconcile.py:115: RuntimeWarning: Mean of empty slice
+  return (1 - miss / n, float(np.nanmean(det)) if det else np.nan, float(np.mean(mint)) if mint else np.nan, float(np.nanmean(ret)) if ret else np.nan)
+case39 (1.1, 0.35045822547389405, 0.6699747812594127, 0.11287856679851212, 0.20541385209981372, 0.7957519800777615, 1.1039908333101298, 1.0, 0.1000000000000103, 0.21910132425485052)
+case39 (1.25, 0.8408211977505604, 1.7812480099691168, 0.2089950518306242, 0.8605016417748338, 0.9396373428543655, 1.2453885881672022, 1.0, 0.1000000000000103, 0.08057708087187614)

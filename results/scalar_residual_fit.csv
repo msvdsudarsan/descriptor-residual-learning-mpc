@@ -1,0 +1,16 @@
+quantity,value
+library_degree,3
+library_terms,20
+active_terms,3
+ridge,0.0001
+threshold,0.2
+residual_rms_true_test,0.11970858
+residual_rms_error_after_fit,0.021154937
+error_reduction_percent,82.327969
+max_abs_error_test,0.066382796
+rho_pointwise_95,0.10974109
+coverage_pointwise_test,0.9328125
+rho_block_95,0.16132553
+coverage_block_test,0.95833333
+n_calibration_blocks,60
+n_test_blocks,96

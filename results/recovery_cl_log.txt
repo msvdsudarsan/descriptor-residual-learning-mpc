@@ -1,0 +1,20 @@
+/home/claude/w/GITHUB/code/network_benchmark.py:179: NumbaPerformanceWarning: [1m[1m[1m'@' is faster on contiguous arrays, called on (Array(float64, 2, 'A', False, aligned=True), Array(float64, 1, 'C', False, aligned=True))[0m[0m[0m
+  th2 = tangent_theta(theta, Jinv, delta, d2, gbus, bg) if mode == 0 else solve_theta(theta, d2, Pd, lf, lt, lb, gbus, bg, 1e-10, 12)[0]
+case9 mild 1.05 run 0 {'C0': 0.3515, 'A0': 0.1772, 'A2': 0.0783, 'pp': 0.1772, 'gate': 0.0209, 'rec': 0.0264, 'oracle': 0.0157}
+case9 mild 1.05 run 1 {'C0': 0.3296, 'A0': 0.1676, 'A2': 0.0741, 'pp': 0.1676, 'gate': 0.0149, 'rec': 0.0108, 'oracle': 0.0108}
+case9 mild 1.05 run 2 {'C0': 0.3416, 'A0': 0.178, 'A2': 0.0736, 'pp': 0.178, 'gate': 0.0162, 'rec': 0.0118, 'oracle': 0.0129}
+case9 mild 1.05 run 3 {'C0': 0.3463, 'A0': 0.1827, 'A2': 0.0713, 'pp': 0.1827, 'gate': 0.0165, 'rec': 0.0149, 'oracle': 0.0164}
+case9 mild 1.05 run 4 {'C0': 0.3381, 'A0': 0.1825, 'A2': 0.0697, 'pp': 0.1825, 'gate': 0.0178, 'rec': 0.0257, 'oracle': 0.0186}
+case9 mild 1.05 run 5 {'C0': 0.3575, 'A0': 0.1792, 'A2': 0.0685, 'pp': 0.1792, 'gate': 0.0173, 'rec': 0.018, 'oracle': 0.015}
+case9 mild 1.10 run 0 {'C0': 0.3686, 'A0': 0.1124, 'A2': 0.1422, 'pp': 0.1124, 'gate': 0.012, 'rec': 0.0251, 'oracle': 0.0179}
+case9 mild 1.10 run 1 {'C0': 0.3455, 'A0': 0.1025, 'A2': 0.1533, 'pp': 0.1025, 'gate': 0.0081, 'rec': 0.0163, 'oracle': 0.0112}
+case9 mild 1.10 run 2 {'C0': 0.3581, 'A0': 0.1168, 'A2': 0.14, 'pp': 0.1168, 'gate': 0.0104, 'rec': 0.018, 'oracle': 0.0164}
+case9 mild 1.10 run 3 {'C0': 0.3631, 'A0': 0.1221, 'A2': 0.1378, 'pp': 0.1221, 'gate': 0.0094, 'rec': 0.0212, 'oracle': 0.0196}
+case9 mild 1.10 run 4 {'C0': 0.3544, 'A0': 0.1195, 'A2': 0.1352, 'pp': 0.1195, 'gate': 0.0113, 'rec': 0.0306, 'oracle': 0.0217}
+case9 mild 1.10 run 5 {'C0': 0.3749, 'A0': 0.1134, 'A2': 0.1295, 'pp': 0.1134, 'gate': 0.0137, 'rec': 0.0277, 'oracle': 0.0167}
+case9 recovery 1.10 run 0 {'C0': 0.3503, 'A0': 0.1031, 'A2': 0.1424, 'pp': 0.1031, 'gate': 0.0128, 'rec': 0.0233, 'oracle': 0.0178}
+case9 recovery 1.10 run 1 {'C0': 0.3626, 'A0': 0.1032, 'A2': 0.1506, 'pp': 0.1032, 'gate': 0.0096, 'rec': 0.0198, 'oracle': 0.0133}
+case9 recovery 1.10 run 2 {'C0': 0.3479, 'A0': 0.1071, 'A2': 0.1365, 'pp': 0.1071, 'gate': 0.0135, 'rec': 0.0248, 'oracle': 0.0188}
+case9 recovery 1.10 run 3 {'C0': 0.3694, 'A0': 0.1235, 'A2': 0.1305, 'pp': 0.1235, 'gate': 0.0131, 'rec': 0.032, 'oracle': 0.0212}
+case9 recovery 1.10 run 4 {'C0': 0.3692, 'A0': 0.1248, 'A2': 0.1332, 'pp': 0.1248, 'gate': 0.0115, 'rec': 0.0212, 'oracle': 0.0181}
+case9 recovery 1.10 run 5 {'C0': 0.3724, 'A0': 0.111, 'A2': 0.1395, 'pp': 0.111, 'gate': 0.0094, 'rec': 0.0187, 'oracle': 0.0138}
