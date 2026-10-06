@@ -11,4 +11,4 @@ version: "1.0.0"
 date-released: "2026-10-06"
 license: MIT
 repository-code: "https://github.com/msvdsudarsan/descriptor-residual-learning-mpc"
-# After Zenodo mints the DOI, add:  doi: 10.5281/zenodo.XXXXXXX
+doi: 10.5281/zenodo.23174632
