@@ -1,6 +1,6 @@
 # Structure-preserving residual learning and predictive control of nonlinear descriptor power-network models
 
-Code, data and results for the manuscript submitted to *Communications in Nonlinear Science and Numerical Simulation* (release 1.0.0, October 2026).
+Code, data and results for the manuscript submitted to *Communications in Nonlinear Science and Numerical Simulation* (release 1.0.0, October 2026). Archived at Zenodo: https://doi.org/10.5281/zenodo.23174632
 
 ## Contents
 | Folder | Content |
