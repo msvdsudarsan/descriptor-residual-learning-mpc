@@ -11,7 +11,7 @@ Code, data and results for the manuscript submitted to *Communications in Nonlin
 | `figures/` | every figure of the paper (PDF and PNG) |
 | `tests/` | consistency tests tying the code to the claims |
 | `tools/` | `check_paper_values.py` verifies that the numbers printed in the manuscript match `results/`; `regularity_chain_check.py` checks Proposition 3 (manifold sensitivity and Lipschitz bound) numerically |
-| `paper/` | `main.tex` (manuscript source) and `values_used.json` (the values it quotes) |
+| `paper/` | `values_used.json` (the numerical values quoted in the manuscript, checked by `tools/check_paper_values.py`) |
 
 ## Reproduce
 ```bash
