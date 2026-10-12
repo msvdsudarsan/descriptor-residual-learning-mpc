@@ -86,7 +86,7 @@ def test_lipschitz_chain_bound():
 
 
 def test_exact_gradient_matches_central_differences():
-    # Section 4.5: exact gradient of the projected-predictor cost against central differences
+    # exact gradient of the projected-predictor cost against central differences
     import network_experiments as ne
     from network_gradient import mpc_cost_net_analytic
     for name in ('case9', 'case39'):
@@ -104,7 +104,7 @@ def test_exact_gradient_matches_central_differences():
 
 
 def test_trust_gate_separates_shift_from_no_shift():
-    # Section 4.6: tau stays at 1 in ordinary operation and drops below 0.5 within 0.3 s of an unannounced dispatch step
+    # trust gate: tau stays at 1 in ordinary operation and drops below 0.5 within 0.3 s of an unannounced dispatch step
     import numpy as np
     import network_validity_gate as g
     c0, th, de, coef = g.nominal_fit('case9'); lam_ref = g.regularity(c0, th, de)[0]
@@ -120,7 +120,7 @@ def test_trust_gate_separates_shift_from_no_shift():
 
 
 def test_reconciliation_recovers_dispatch_scale():
-    # Section 4.6: after an unannounced dispatch step the estimated scale is within 3% of the true one, and it returns to one when the step is undone
+    # reconciliation: after an unannounced dispatch step the estimated scale is within 3% of the true one, and it returns to one when the step is undone
     import numpy as np
     import network_reconcile as nr
     c0, th, de, coef = nr.nominal_fit('case9'); lam_ref = nr.regularity(c0, th, de)[0]
