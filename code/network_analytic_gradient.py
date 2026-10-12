@@ -1,7 +1,7 @@
 """Analytic-gradient study for the projected network controllers (A2, A3).
 
 1. Gradient check: exact gradient against central differences, and time per cost-and-gradient evaluation.
-2. Closed loop at the elevated loading of Table 7, same realizations and calibrated envelope as in network_experiments.py,
+2. Closed loop at the elevated loading of the network closed-loop table, same realizations and calibrated envelope as in network_experiments.py,
    with the analytic gradient in A2 and A3 (A0 keeps finite differences; A2 with finite differences is re-timed in the same session).
 """
 import time

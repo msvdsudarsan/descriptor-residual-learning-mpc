@@ -14,7 +14,7 @@ M_SMOOTH = 3             # innovation scores are averaged over the last three sa
 
 # ----------------------------------------------------------------------------- plant with an abrupt shift
 def simulate_shift(c0, c1, t_shift, th0, de0, w0, controller, T, load, hp=0.0125, Ts=TS, t_restore=None):
-    """True plant; at t_shift the plant switches from case c0 to case c1 (load and dispatch scale together, as in Table 5), and
+    """True plant; at t_shift the plant switches from case c0 to case c1 (load and dispatch scale together, as in the reconciliation table), and
     back to c0 at t_restore if given.  controller(t, delta, w, theta, u_prev, Pd_now) -> u.  The algebraic variables are re-solved at each switch."""
     lamp, lom, lph = load
     ng = c0['ng']; nsteps = int(round(T / Ts)); nsub = int(round(Ts / hp))

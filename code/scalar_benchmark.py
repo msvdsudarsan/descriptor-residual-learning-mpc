@@ -1,4 +1,4 @@
-"""Scalar nonlinear descriptor benchmark (Section 3 of the manuscript).
+"""Scalar nonlinear descriptor benchmark (scalar benchmark of the manuscript).
 
 True plant (index-1 semi-explicit DAE, one angle/frequency pair, one algebraic voltage-like variable):
     d' = w

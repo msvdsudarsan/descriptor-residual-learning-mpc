@@ -1,4 +1,4 @@
-"""Draws the conceptual pipeline figure: Fig. 1 of the manuscript and the graphical abstract.
+"""Draws the conceptual pipeline figure: Fig. 1 of the manuscript (pipeline) and the graphical abstract.
 
 Pure matplotlib drawing in inch coordinates; it shows no data and no result.
 Outputs (figures/): fig_pipeline.pdf (manuscript, 5.4 in wide), graphical_abstract.png (2656 x 1062 px).

@@ -2,7 +2,7 @@
 
 A. Atlas: ratio A2/A0 of the 1 s prediction error over load scale mu (descriptor regularity axis) and dispatch error kappa
    (operating-compatibility axis).  The plant follows the load with its dispatch; the predictor is told the load and uses
-   the dispatch Pm_plant * (1 + kappa).  kappa = 0 is a known dispatch; kappa = 1/mu - 1 reproduces Table 5.
+   the dispatch Pm_plant * (1 + kappa).  kappa = 0 is a known dispatch; kappa = 1/mu - 1 reproduces the reconciliation table.
 B. Gate: prediction experiments with an abrupt load-and-dispatch step at 3 s, announced to the predictor or not, plus
    no-change and false-shift stress runs.  Gate constants (a, b) are chosen on validation scenarios, then frozen.
 C. Closed loop: C0, A0, A2, A2 with tau = 0 (physics + projection) and SP-RTG after the same step.

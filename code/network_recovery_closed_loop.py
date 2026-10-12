@@ -1,5 +1,5 @@
 """Closed loop on case9 with the physics-plus-projection fallback added to the mild-step test, and a recovery test in which the
-dispatch step is undone.  case39 is not repeated: its input sits at the bound in all predictive controllers (Section 7.14)."""
+dispatch step is undone.  case39 is not repeated: its input sits at the bound in all predictive controllers (see the mild-step closed-loop discussion of the manuscript)."""
 import sys
 import numpy as np
 from network_reconcile import *
