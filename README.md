@@ -19,11 +19,11 @@ git clone https://github.com/msvdsudarsan/descriptor-residual-learning-mpc.git &
 pip install -r requirements.txt
 bash run_all.sh        # run time depends on the hardware; the scalar closed-loop stage and case39 are the longest
 ```
-All random numbers use fixed seeds and nothing is downloaded. Timing columns (`solve_ms`) depend on the machine; every other column reproduces exactly. `python tools/check_paper_values.py` compares the regenerated results with the numbers in the paper.
+All random numbers use fixed seeds and nothing is downloaded. Timing columns (`solve_ms`) are hardware-dependent. On other machines tiny floating-point differences can also occur in the other columns (up to about 0.3% in the extreme case39 atlas corners, load scale 3), without changing any value reported in the manuscript. `python tools/check_paper_values.py` compares the regenerated results with the numbers in the paper.
 
 ## Model summary
 * Scalar benchmark: one angle/frequency pair and one algebraic voltage-like variable; the physics model has wrong gains and omits the cubic term.
-* Networks: classical swing generators, all bus angles algebraic (lossless network, unit voltages). Inertia, damping and transient reactance are **declared assumptions** (they are not in MATPOWER); see Appendix A of the paper.
+* Networks: classical swing generators, all bus angles algebraic (lossless network, unit voltages). Inertia, damping and transient reactance are **declared assumptions** (they are not in MATPOWER); see Supplementary Material S1 (parameter table).
 * Variants: A0 physics-only (tangent update), A1 + learned residual, A2 + Newton projection, A3 + penalty tightening by the prediction-error envelope; C0 static feedback.
 
 ## Limits (see the paper)
