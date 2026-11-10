@@ -1,0 +1,1672 @@
+{
+ "description": "Column mapping from stored result files to the numeric columns of Supplement S1 tables. Contains no table values. scale: multiplier applied to the stored value (1 = none, 100 = per cent); decimals: rounding shown in the table.",
+ "tables": [
+  {
+   "table_index": 3,
+   "label": "tab:S1",
+   "caption_start": "Residual identification and conformal bound, scalar benchmark.",
+   "source": "results/scalar_residual_fit.csv",
+   "row_mode": "all",
+   "columns": [
+    {
+     "table_column": 1,
+     "source_column": "value",
+     "scale": 1,
+     "decimals": 0,
+     "header": "Value"
+    }
+   ]
+  },
+  {
+   "table_index": 4,
+   "label": "tab:S2",
+   "caption_start": "Disturbance-amplitude sweep (8 realizations per amplitude). The advantage of A3 ",
+   "source": "results/scalar_disturbance_sweep.csv",
+   "row_mode": "all",
+   "columns": [
+    {
+     "table_column": 0,
+     "source_column": "amp",
+     "scale": 1,
+     "decimals": 2,
+     "header": "Amplitude"
+    },
+    {
+     "table_column": 1,
+     "source_column": "A0_iae",
+     "scale": 1,
+     "decimals": 3,
+     "header": "IAE (A0)"
+    },
+    {
+     "table_column": 2,
+     "source_column": "A0_viol",
+     "scale": 1,
+     "decimals": 4,
+     "header": "Viol. (A0)"
+    },
+    {
+     "table_column": 3,
+     "source_column": "A3_iae",
+     "scale": 1,
+     "decimals": 3,
+     "header": "IAE (A3)"
+    },
+    {
+     "table_column": 4,
+     "source_column": "A3_viol",
+     "scale": 1,
+     "decimals": 4,
+     "header": "Viol. (A3)"
+    }
+   ]
+  },
+  {
+   "table_index": 5,
+   "label": "tab:S3",
+   "caption_start": "Learning curve of the scalar residual.",
+   "source": "results/scalar_learning_curve.csv",
+   "row_mode": "all",
+   "columns": [
+    {
+     "table_column": 0,
+     "source_column": "noise_std",
+     "scale": 1,
+     "decimals": 3,
+     "header": "Noise s.d."
+    },
+    {
+     "table_column": 1,
+     "source_column": "n_train",
+     "scale": 1,
+     "decimals": 0,
+     "header": "Training traj."
+    },
+    {
+     "table_column": 2,
+     "source_column": "rmse_mean",
+     "scale": 1,
+     "decimals": 4,
+     "header": "Held-out RMSE"
+    },
+    {
+     "table_column": 3,
+     "source_column": "rmse_std",
+     "scale": 1,
+     "decimals": 4,
+     "header": "s.d. (4 draws)"
+    }
+   ]
+  },
+  {
+   "table_index": 6,
+   "label": "tab:S4",
+   "caption_start": "Conformal envelope used by A3 in the scalar benchmark ($\\alpha=0.05$).",
+   "source": "results/scalar_tube_envelope.csv",
+   "row_mode": "all",
+   "columns": [
+    {
+     "table_column": 0,
+     "source_column": "k",
+     "scale": 1,
+     "decimals": 0,
+     "header": "Step k"
+    },
+    {
+     "table_column": 1,
+     "source_column": "eps_delta",
+     "scale": 1,
+     "decimals": 4,
+     "header": "_k^"
+    },
+    {
+     "table_column": 2,
+     "source_column": "eps_omega",
+     "scale": 1,
+     "decimals": 4,
+     "header": "_k^"
+    }
+   ]
+  },
+  {
+   "table_index": 7,
+   "label": "tab:S5",
+   "caption_start": "Paired differences with respect to A0 (16 realizations, bootstrap 95\\% intervals",
+   "source": "results/scalar_closed_loop_paired_vs_A0.csv",
+   "row_mode": "all",
+   "columns": [
+    {
+     "table_column": 2,
+     "source_column": "mean_diff",
+     "scale": 1,
+     "decimals": 4,
+     "header": "Mean diff. vs A0"
+    },
+    {
+     "table_column": 3,
+     "source_column": "lo",
+     "scale": 1,
+     "decimals": 4,
+     "header": "CI low"
+    }
+   ]
+  },
+  {
+   "table_index": 8,
+   "label": "tab:S6",
+   "caption_start": "Coverage of the scalar-benchmark envelope on independent trajectories (fraction ",
+   "source": "results/scalar_envelope_coverage.csv",
+   "row_mode": "all",
+   "columns": [
+    {
+     "table_column": 1,
+     "source_column": "n_traj",
+     "scale": 1,
+     "decimals": 0,
+     "header": "Traj."
+    },
+    {
+     "table_column": 2,
+     "source_column": "cover_delta_k6",
+     "scale": 1,
+     "decimals": 3,
+     "header": ", k=6"
+    },
+    {
+     "table_column": 3,
+     "source_column": "cover_delta_k6",
+     "scale": 1,
+     "decimals": 3,
+     "header": ", k=6"
+    },
+    {
+     "table_column": 4,
+     "source_column": "cover_delta_k12",
+     "scale": 1,
+     "decimals": 3,
+     "header": ", k=12"
+    },
+    {
+     "table_column": 5,
+     "source_column": "cover_delta_k12",
+     "scale": 1,
+     "decimals": 3,
+     "header": ", k=12"
+    },
+    {
+     "table_column": 6,
+     "source_column": "cover_delta_k12",
+     "scale": 1,
+     "decimals": 3,
+     "header": "Joint, all k"
+    }
+   ]
+  },
+  {
+   "table_index": 9,
+   "label": "tab:S7",
+   "caption_start": "Library complexity of the scalar residual (degree-3 library): held-out error aga",
+   "source": "results/scalar_complexity.csv",
+   "row_mode": "all",
+   "columns": [
+    {
+     "table_column": 0,
+     "source_column": "threshold",
+     "scale": 1,
+     "decimals": 2,
+     "header": "Threshold"
+    },
+    {
+     "table_column": 1,
+     "source_column": "active_terms",
+     "scale": 1,
+     "decimals": 0,
+     "header": "Active terms"
+    },
+    {
+     "table_column": 2,
+     "source_column": "heldout_residual_rmse",
+     "scale": 1,
+     "decimals": 4,
+     "header": "Held-out RMSE"
+    }
+   ]
+  },
+  {
+   "table_index": 10,
+   "label": "tab:S_sp_case9",
+   "caption_start": "Regularity and spectrum, case9.",
+   "source": "results/case9_spectrum.csv",
+   "row_mode": "all",
+   "columns": [
+    {
+     "table_column": 1,
+     "source_column": "value",
+     "scale": 1,
+     "decimals": 4,
+     "header": "Value"
+    }
+   ]
+  },
+  {
+   "table_index": 11,
+   "label": "tab:S_rf_case9",
+   "caption_start": "Residual identification, case9.",
+   "source": "results/case9_nom_residual_fit.csv",
+   "row_mode": "all",
+   "columns": [
+    {
+     "table_column": 1,
+     "source_column": "value",
+     "scale": 1,
+     "decimals": 4,
+     "header": "Nominal loading",
+     "source": "results/case9_nom_residual_fit.csv"
+    },
+    {
+     "table_column": 2,
+     "source_column": "value",
+     "scale": 1,
+     "decimals": 4,
+     "header": "Elevated loading",
+     "source": "results/case9_stress_residual_fit.csv"
+    }
+   ]
+  },
+  {
+   "table_index": 12,
+   "label": "tab:S_sn_case9",
+   "caption_start": "One-factor sensitivity, case9. The plant parameter is scaled; predictors keep ev",
+   "source": "results/case9_sensitivity.csv",
+   "row_mode": "all",
+   "columns": [
+    {
+     "table_column": 1,
+     "source_column": "scale",
+     "scale": 1,
+     "decimals": 2,
+     "header": "Scale"
+    },
+    {
+     "table_column": 2,
+     "source_column": "rmse_A0_1s",
+     "scale": 1,
+     "decimals": 4,
+     "header": "RMSE A0"
+    },
+    {
+     "table_column": 3,
+     "source_column": "rmse_A2_1s",
+     "scale": 1,
+     "decimals": 4,
+     "header": "RMSE A2"
+    },
+    {
+     "table_column": 4,
+     "source_column": "ratio",
+     "scale": 1,
+     "decimals": 3,
+     "header": "Ratio"
+    }
+   ]
+  },
+  {
+   "table_index": 13,
+   "label": "tab:S_mc_case9",
+   "caption_start": "Monte Carlo ensemble summary, case9",
+   "source": "results/case9_montecarlo.csv",
+   "row_mode": "aggregate",
+   "aggregate": {
+    "statistics": [
+     "count",
+     "mean",
+     "min",
+     "max"
+    ],
+    "columns": {
+     "1": "rmse_A0",
+     "2": "rmse_A2",
+     "3": "ratio"
+    },
+    "decimals": 4
+   }
+  },
+  {
+   "table_index": 14,
+   "label": "tab:S_tr_case9",
+   "caption_start": "Transfer across loadings, case9 (RMSE columns A0, A2 single, A2 pooled; load = l",
+   "source": "results/case9_transfer.csv",
+   "row_mode": "all",
+   "columns": [
+    {
+     "table_column": 1,
+     "source_column": "load_scale",
+     "scale": 1,
+     "decimals": 1,
+     "header": "Load"
+    },
+    {
+     "table_column": 2,
+     "source_column": "rmse_A0",
+     "scale": 1,
+     "decimals": 4,
+     "header": "A0"
+    },
+    {
+     "table_column": 3,
+     "source_column": "rmse_A2_single_loading",
+     "scale": 1,
+     "decimals": 4,
+     "header": "A2 single"
+    },
+    {
+     "table_column": 4,
+     "source_column": "rmse_A2_pooled",
+     "scale": 1,
+     "decimals": 4,
+     "header": "A2 pooled"
+    },
+    {
+     "table_column": 5,
+     "source_column": "ratio_single",
+     "scale": 1,
+     "decimals": 3,
+     "header": "Ratio single"
+    },
+    {
+     "table_column": 6,
+     "source_column": "ratio_pooled",
+     "scale": 1,
+     "decimals": 3,
+     "header": "Ratio pooled"
+    }
+   ]
+  },
+  {
+   "table_index": 15,
+   "label": "tab:S_cx_case9",
+   "caption_start": "Library complexity, case9: held-out residual error against the number of active ",
+   "source": "results/case9_complexity.csv",
+   "row_mode": "all",
+   "columns": [
+    {
+     "table_column": 0,
+     "source_column": "threshold",
+     "scale": 1,
+     "decimals": 2,
+     "header": "Threshold"
+    },
+    {
+     "table_column": 1,
+     "source_column": "active_terms",
+     "scale": 1,
+     "decimals": 0,
+     "header": "Active terms"
+    },
+    {
+     "table_column": 2,
+     "source_column": "terms_available",
+     "scale": 1,
+     "decimals": 0,
+     "header": "Available"
+    },
+    {
+     "table_column": 3,
+     "source_column": "heldout_residual_rmse",
+     "scale": 1,
+     "decimals": 4,
+     "header": "Held-out RMSE"
+    },
+    {
+     "table_column": 4,
+     "source_column": "error_reduction_percent",
+     "scale": 1,
+     "decimals": 2,
+     "header": "Reduction [\\%]"
+    }
+   ]
+  },
+  {
+   "table_index": 16,
+   "label": "tab:S_ool_case9",
+   "caption_start": "Plant mismatch term $0.15\\,b_i\\psi_i|\\psi_i|$ outside the library, case9.",
+   "source": "results/case9_out_of_library.csv",
+   "row_mode": "all",
+   "columns": [
+    {
+     "table_column": 1,
+     "source_column": "value",
+     "scale": 1,
+     "decimals": 2,
+     "header": "Value"
+    }
+   ]
+  },
+  {
+   "table_index": 17,
+   "label": "tab:S_ec_case9",
+   "caption_start": "Coverage of the line-angle envelope at the elevated loading, case9.",
+   "source": "results/case9_envelope_coverage.csv",
+   "row_mode": "all",
+   "columns": [
+    {
+     "table_column": 1,
+     "source_column": "n_traj",
+     "scale": 1,
+     "decimals": 0,
+     "header": "Traj."
+    },
+    {
+     "table_column": 2,
+     "source_column": "cover_k5",
+     "scale": 1,
+     "decimals": 2,
+     "header": "Coverage, k=5"
+    },
+    {
+     "table_column": 3,
+     "source_column": "cover_k5",
+     "scale": 1,
+     "decimals": 2,
+     "header": "Joint, k=1 to 5"
+    }
+   ]
+  },
+  {
+   "table_index": 18,
+   "label": "tab:S_tes_case9",
+   "caption_start": "Trajectory-level envelope used by A3 at the elevated loading, case9.",
+   "source": "results/case9_tube_envelope_stress.csv",
+   "row_mode": "all",
+   "columns": [
+    {
+     "table_column": 0,
+     "source_column": "k",
+     "scale": 1,
+     "decimals": 0,
+     "header": "Step k"
+    },
+    {
+     "table_column": 1,
+     "source_column": "eps_line_angle_rad",
+     "scale": 1,
+     "decimals": 5,
+     "header": "_k [rad]"
+    }
+   ]
+  },
+  {
+   "table_index": 19,
+   "label": "tab:S_te_case9",
+   "caption_start": "Trajectory-level envelope of the largest componentwise error (all line angles an",
+   "source": "results/case9_tube_envelope.csv",
+   "row_mode": "all",
+   "columns": [
+    {
+     "table_column": 0,
+     "source_column": "k",
+     "scale": 1,
+     "decimals": 0,
+     "header": "Step k"
+    },
+    {
+     "table_column": 1,
+     "source_column": "eps_line_angle_rad",
+     "scale": 1,
+     "decimals": 5,
+     "header": "_k [rad]"
+    }
+   ]
+  },
+  {
+   "table_index": 20,
+   "label": "tab:S_sp_case39",
+   "caption_start": "Regularity and spectrum, case39.",
+   "source": "results/case39_spectrum.csv",
+   "row_mode": "all",
+   "columns": [
+    {
+     "table_column": 1,
+     "source_column": "value",
+     "scale": 1,
+     "decimals": 4,
+     "header": "Value"
+    }
+   ]
+  },
+  {
+   "table_index": 21,
+   "label": "tab:S_rf_case39",
+   "caption_start": "Residual identification, case39.",
+   "source": "results/case39_nom_residual_fit.csv",
+   "row_mode": "all",
+   "columns": [
+    {
+     "table_column": 1,
+     "source_column": "value",
+     "scale": 1,
+     "decimals": 4,
+     "header": "Nominal loading",
+     "source": "results/case39_nom_residual_fit.csv"
+    },
+    {
+     "table_column": 2,
+     "source_column": "value",
+     "scale": 1,
+     "decimals": 4,
+     "header": "Elevated loading",
+     "source": "results/case39_stress_residual_fit.csv"
+    }
+   ]
+  },
+  {
+   "table_index": 22,
+   "label": "tab:S_sn_case39",
+   "caption_start": "One-factor sensitivity, case39. The plant parameter is scaled; predictors keep e",
+   "source": "results/case39_sensitivity.csv",
+   "row_mode": "all",
+   "columns": [
+    {
+     "table_column": 1,
+     "source_column": "scale",
+     "scale": 1,
+     "decimals": 2,
+     "header": "Scale"
+    },
+    {
+     "table_column": 2,
+     "source_column": "rmse_A0_1s",
+     "scale": 1,
+     "decimals": 4,
+     "header": "RMSE A0"
+    },
+    {
+     "table_column": 3,
+     "source_column": "rmse_A2_1s",
+     "scale": 1,
+     "decimals": 4,
+     "header": "RMSE A2"
+    },
+    {
+     "table_column": 4,
+     "source_column": "ratio",
+     "scale": 1,
+     "decimals": 3,
+     "header": "Ratio"
+    }
+   ]
+  },
+  {
+   "table_index": 23,
+   "label": "tab:S_mc_case39",
+   "caption_start": "Monte Carlo ensemble summary, case39",
+   "source": "results/case39_montecarlo.csv",
+   "row_mode": "aggregate",
+   "aggregate": {
+    "statistics": [
+     "count",
+     "mean",
+     "min",
+     "max"
+    ],
+    "columns": {
+     "1": "rmse_A0",
+     "2": "rmse_A2",
+     "3": "ratio"
+    },
+    "decimals": 4
+   }
+  },
+  {
+   "table_index": 24,
+   "label": "tab:S_tr_case39",
+   "caption_start": "Transfer across loadings, case39 (RMSE columns A0, A2 single, A2 pooled; load = ",
+   "source": "results/case39_transfer.csv",
+   "row_mode": "all",
+   "columns": [
+    {
+     "table_column": 1,
+     "source_column": "load_scale",
+     "scale": 1,
+     "decimals": 1,
+     "header": "Load"
+    },
+    {
+     "table_column": 2,
+     "source_column": "rmse_A0",
+     "scale": 1,
+     "decimals": 4,
+     "header": "A0"
+    },
+    {
+     "table_column": 3,
+     "source_column": "rmse_A2_single_loading",
+     "scale": 1,
+     "decimals": 4,
+     "header": "A2 single"
+    },
+    {
+     "table_column": 4,
+     "source_column": "rmse_A2_pooled",
+     "scale": 1,
+     "decimals": 4,
+     "header": "A2 pooled"
+    },
+    {
+     "table_column": 5,
+     "source_column": "ratio_single",
+     "scale": 1,
+     "decimals": 3,
+     "header": "Ratio single"
+    },
+    {
+     "table_column": 6,
+     "source_column": "ratio_pooled",
+     "scale": 1,
+     "decimals": 3,
+     "header": "Ratio pooled"
+    }
+   ]
+  },
+  {
+   "table_index": 25,
+   "label": "tab:S_cx_case39",
+   "caption_start": "Library complexity, case39: held-out residual error against the number of active",
+   "source": "results/case39_complexity.csv",
+   "row_mode": "all",
+   "columns": [
+    {
+     "table_column": 0,
+     "source_column": "threshold",
+     "scale": 1,
+     "decimals": 2,
+     "header": "Threshold"
+    },
+    {
+     "table_column": 1,
+     "source_column": "active_terms",
+     "scale": 1,
+     "decimals": 0,
+     "header": "Active terms"
+    },
+    {
+     "table_column": 2,
+     "source_column": "terms_available",
+     "scale": 1,
+     "decimals": 0,
+     "header": "Available"
+    },
+    {
+     "table_column": 3,
+     "source_column": "heldout_residual_rmse",
+     "scale": 1,
+     "decimals": 4,
+     "header": "Held-out RMSE"
+    },
+    {
+     "table_column": 4,
+     "source_column": "error_reduction_percent",
+     "scale": 1,
+     "decimals": 2,
+     "header": "Reduction [\\%]"
+    }
+   ]
+  },
+  {
+   "table_index": 26,
+   "label": "tab:S_ool_case39",
+   "caption_start": "Plant mismatch term $0.15\\,b_i\\psi_i|\\psi_i|$ outside the library, case39.",
+   "source": "results/case39_out_of_library.csv",
+   "row_mode": "all",
+   "columns": [
+    {
+     "table_column": 1,
+     "source_column": "value",
+     "scale": 1,
+     "decimals": 4,
+     "header": "Value"
+    }
+   ]
+  },
+  {
+   "table_index": 27,
+   "label": "tab:S_ec_case39",
+   "caption_start": "Coverage of the line-angle envelope at the elevated loading, case39.",
+   "source": "results/case39_envelope_coverage.csv",
+   "row_mode": "all",
+   "columns": [
+    {
+     "table_column": 1,
+     "source_column": "n_traj",
+     "scale": 1,
+     "decimals": 0,
+     "header": "Traj."
+    },
+    {
+     "table_column": 2,
+     "source_column": "cover_k5",
+     "scale": 1,
+     "decimals": 2,
+     "header": "Coverage, k=5"
+    },
+    {
+     "table_column": 3,
+     "source_column": "cover_joint_k1_to_5",
+     "scale": 1,
+     "decimals": 2,
+     "header": "Joint, k=1 to 5"
+    }
+   ]
+  },
+  {
+   "table_index": 28,
+   "label": "tab:S_tes_case39",
+   "caption_start": "Trajectory-level envelope used by A3 at the elevated loading, case39.",
+   "source": "results/case39_tube_envelope_stress.csv",
+   "row_mode": "all",
+   "columns": [
+    {
+     "table_column": 0,
+     "source_column": "k",
+     "scale": 1,
+     "decimals": 0,
+     "header": "Step k"
+    },
+    {
+     "table_column": 1,
+     "source_column": "eps_line_angle_rad",
+     "scale": 1,
+     "decimals": 5,
+     "header": "_k [rad]"
+    }
+   ]
+  },
+  {
+   "table_index": 29,
+   "label": "tab:S_te_case39",
+   "caption_start": "Trajectory-level envelope of the largest componentwise error (all line angles an",
+   "source": "results/case39_tube_envelope.csv",
+   "row_mode": "all",
+   "columns": [
+    {
+     "table_column": 0,
+     "source_column": "k",
+     "scale": 1,
+     "decimals": 0,
+     "header": "Step k"
+    },
+    {
+     "table_column": 1,
+     "source_column": "eps_line_angle_rad",
+     "scale": 1,
+     "decimals": 5,
+     "header": "_k [rad]"
+    }
+   ]
+  },
+  {
+   "table_index": 30,
+   "label": "tab:S_tube",
+   "caption_start": "Constraint-active test (case9, line-angle limit 23",
+   "source": "results/case9_cl_recal_performance.csv",
+   "row_mode": "all",
+   "columns": [
+    {
+     "table_column": 0,
+     "source_column": "run",
+     "scale": 1,
+     "decimals": 0,
+     "header": "Run"
+    },
+    {
+     "table_column": 2,
+     "source_column": "peak_deg",
+     "scale": 1,
+     "decimals": 2,
+     "header": "Peak [deg]"
+    },
+    {
+     "table_column": 3,
+     "source_column": "viol_integral_rad_s",
+     "scale": 1,
+     "decimals": 5,
+     "header": "Viol. integral"
+    },
+    {
+     "table_column": 4,
+     "source_column": "frac_time_over_limit",
+     "scale": 1,
+     "decimals": 3,
+     "header": "Frac. time over"
+    },
+    {
+     "table_column": 5,
+     "source_column": "w_rms",
+     "scale": 1,
+     "decimals": 3,
+     "header": "w rms"
+    }
+   ],
+   "filter": {
+    "scenario": "limit 23 deg"
+   }
+  },
+  {
+   "table_index": 31,
+   "label": "tab:S_rec_case9",
+   "caption_start": "All prediction scenarios, case9. Step $\\mu$: scale of load and dispatch after th",
+   "source": "results/case9_reconcile_prediction.csv",
+   "row_mode": "all",
+   "columns": [
+    {
+     "table_column": 1,
+     "source_column": "rmse_A0",
+     "scale": 1,
+     "decimals": 3,
+     "header": "A0"
+    },
+    {
+     "table_column": 2,
+     "source_column": "rmse_A2",
+     "scale": 1,
+     "decimals": 3,
+     "header": "A2"
+    },
+    {
+     "table_column": 3,
+     "source_column": "rmse_oracle",
+     "scale": 1,
+     "decimals": 3,
+     "header": "Oracle"
+    },
+    {
+     "table_column": 4,
+     "source_column": "rmse_gate",
+     "scale": 1,
+     "decimals": 3,
+     "header": "Gate"
+    },
+    {
+     "table_column": 5,
+     "source_column": "rmse_reconcile",
+     "scale": 1,
+     "decimals": 3,
+     "header": "Reconc."
+    },
+    {
+     "table_column": 6,
+     "source_column": "mean_rho_estimate",
+     "scale": 1,
+     "decimals": 3,
+     "header": ""
+    },
+    {
+     "table_column": 7,
+     "source_column": "detection_delay_s",
+     "scale": 1,
+     "decimals": 2,
+     "header": "Delay [s]"
+    },
+    {
+     "table_column": 8,
+     "source_column": "min_trust",
+     "scale": 1,
+     "decimals": 2,
+     "header": "_"
+    },
+    {
+     "table_column": 9,
+     "source_column": "retrust_delay_s",
+     "scale": 1,
+     "decimals": 2,
+     "header": "Re-trust [s]"
+    }
+   ]
+  },
+  {
+   "table_index": 32,
+   "label": "tab:S_after_case9",
+   "caption_start": "Recovery runs, case9: prediction RMSE from $0.6$\\,s after the step is undone.",
+   "source": "results/case9_reconcile_after_restore.csv",
+   "row_mode": "all",
+   "columns": [
+    {
+     "table_column": 1,
+     "source_column": "rmse_A0",
+     "scale": 1,
+     "decimals": 3,
+     "header": "A0"
+    },
+    {
+     "table_column": 2,
+     "source_column": "rmse_A2",
+     "scale": 1,
+     "decimals": 3,
+     "header": "A2"
+    },
+    {
+     "table_column": 3,
+     "source_column": "rmse_A2",
+     "scale": 1,
+     "decimals": 3,
+     "header": "Oracle"
+    },
+    {
+     "table_column": 4,
+     "source_column": "rmse_A2",
+     "scale": 1,
+     "decimals": 3,
+     "header": "Gate"
+    },
+    {
+     "table_column": 5,
+     "source_column": "rmse_reconcile",
+     "scale": 1,
+     "decimals": 3,
+     "header": "Reconc."
+    }
+   ]
+  },
+  {
+   "table_index": 33,
+   "label": "tab:S_gcl_case9",
+   "caption_start": "Large unannounced or announced step to",
+   "source": "results/case9_gate_closed_loop.csv",
+   "row_mode": "all",
+   "columns": [
+    {
+     "table_column": 2,
+     "source_column": "w_rms",
+     "scale": 1,
+     "decimals": 3,
+     "header": "w rms"
+    },
+    {
+     "table_column": 3,
+     "source_column": "u_energy",
+     "scale": 1,
+     "decimals": 1,
+     "header": "E_u"
+    },
+    {
+     "table_column": 4,
+     "source_column": "solve_ms",
+     "scale": 1,
+     "decimals": 1,
+     "header": "Time [ms]"
+    }
+   ]
+  },
+  {
+   "table_index": 34,
+   "label": "tab:S_val_case9",
+   "caption_start": "Validation score of the gate, case9",
+   "source": "results/case9_gate_validation.csv",
+   "row_mode": "pivot",
+   "pivot": {
+    "row_key": "a",
+    "col_key": "b",
+    "value": "mean_ratio_gate_over_A0",
+    "decimals": 4
+   }
+  },
+  {
+   "table_index": 35,
+   "label": "tab:S_rec_case39",
+   "caption_start": "All prediction scenarios, case39. Step $\\mu$: scale of load and dispatch after t",
+   "source": "results/case39_reconcile_prediction.csv",
+   "row_mode": "all",
+   "columns": [
+    {
+     "table_column": 1,
+     "source_column": "rmse_A0",
+     "scale": 1,
+     "decimals": 3,
+     "header": "A0"
+    },
+    {
+     "table_column": 2,
+     "source_column": "rmse_A2",
+     "scale": 1,
+     "decimals": 3,
+     "header": "A2"
+    },
+    {
+     "table_column": 3,
+     "source_column": "rmse_oracle",
+     "scale": 1,
+     "decimals": 3,
+     "header": "Oracle"
+    },
+    {
+     "table_column": 4,
+     "source_column": "rmse_gate",
+     "scale": 1,
+     "decimals": 3,
+     "header": "Gate"
+    },
+    {
+     "table_column": 5,
+     "source_column": "rmse_reconcile",
+     "scale": 1,
+     "decimals": 3,
+     "header": "Reconc."
+    },
+    {
+     "table_column": 6,
+     "source_column": "mean_rho_estimate",
+     "scale": 1,
+     "decimals": 3,
+     "header": ""
+    },
+    {
+     "table_column": 7,
+     "source_column": "detection_delay_s",
+     "scale": 1,
+     "decimals": 2,
+     "header": "Delay [s]"
+    },
+    {
+     "table_column": 8,
+     "source_column": "min_trust",
+     "scale": 1,
+     "decimals": 2,
+     "header": "_"
+    },
+    {
+     "table_column": 9,
+     "source_column": "retrust_delay_s",
+     "scale": 1,
+     "decimals": 2,
+     "header": "Re-trust [s]"
+    }
+   ]
+  },
+  {
+   "table_index": 36,
+   "label": "tab:S_after_case39",
+   "caption_start": "Recovery runs, case39: prediction RMSE from $0.6$\\,s after the step is undone.",
+   "source": "results/case39_reconcile_after_restore.csv",
+   "row_mode": "all",
+   "columns": [
+    {
+     "table_column": 1,
+     "source_column": "rmse_A0",
+     "scale": 1,
+     "decimals": 3,
+     "header": "A0"
+    },
+    {
+     "table_column": 2,
+     "source_column": "rmse_A2",
+     "scale": 1,
+     "decimals": 3,
+     "header": "A2"
+    },
+    {
+     "table_column": 3,
+     "source_column": "rmse_A2",
+     "scale": 1,
+     "decimals": 3,
+     "header": "Oracle"
+    },
+    {
+     "table_column": 4,
+     "source_column": "rmse_A2",
+     "scale": 1,
+     "decimals": 3,
+     "header": "Gate"
+    },
+    {
+     "table_column": 5,
+     "source_column": "rmse_reconcile",
+     "scale": 1,
+     "decimals": 3,
+     "header": "Reconc."
+    }
+   ]
+  },
+  {
+   "table_index": 37,
+   "label": "tab:S_gcl_case39",
+   "caption_start": "Large unannounced or announced step to",
+   "source": "results/case39_gate_closed_loop.csv",
+   "row_mode": "all",
+   "columns": [
+    {
+     "table_column": 2,
+     "source_column": "w_rms",
+     "scale": 1,
+     "decimals": 3,
+     "header": "w rms"
+    },
+    {
+     "table_column": 3,
+     "source_column": "u_energy",
+     "scale": 1,
+     "decimals": 1,
+     "header": "E_u"
+    },
+    {
+     "table_column": 4,
+     "source_column": "solve_ms",
+     "scale": 1,
+     "decimals": 1,
+     "header": "Time [ms]"
+    }
+   ]
+  },
+  {
+   "table_index": 38,
+   "label": "tab:S_val_case39",
+   "caption_start": "Validation score of the gate, case39",
+   "source": "results/case39_gate_validation.csv",
+   "row_mode": "pivot",
+   "pivot": {
+    "row_key": "a",
+    "col_key": "b",
+    "value": "mean_ratio_gate_over_A0",
+    "decimals": 4
+   }
+  },
+  {
+   "table_index": 39,
+   "label": "tab:S_nuis_case9",
+   "caption_start": "Nuisance-shift test, case9.",
+   "source": "results/case9_nuisance.csv",
+   "row_mode": "all",
+   "columns": [
+    {
+     "table_column": 1,
+     "source_column": "false_fallback_share",
+     "scale": 100,
+     "decimals": 1,
+     "header": "Fallback [\\%]"
+    },
+    {
+     "table_column": 2,
+     "source_column": "mean_trust",
+     "scale": 1,
+     "decimals": 3,
+     "header": "Mean"
+    },
+    {
+     "table_column": 3,
+     "source_column": "max_abs_rho_minus_1",
+     "scale": 1,
+     "decimals": 3,
+     "header": "|-1|"
+    },
+    {
+     "table_column": 4,
+     "source_column": "ratio_A2_over_A0",
+     "scale": 1,
+     "decimals": 2,
+     "header": "Ratio"
+    }
+   ]
+  },
+  {
+   "table_index": 40,
+   "label": "tab:S_nuis_case39",
+   "caption_start": "Nuisance-shift test, case39.",
+   "source": "results/case39_nuisance.csv",
+   "row_mode": "all",
+   "columns": [
+    {
+     "table_column": 1,
+     "source_column": "false_fallback_share",
+     "scale": 100,
+     "decimals": 1,
+     "header": "Fallback [\\%]"
+    },
+    {
+     "table_column": 2,
+     "source_column": "mean_trust",
+     "scale": 1,
+     "decimals": 3,
+     "header": "Mean"
+    },
+    {
+     "table_column": 3,
+     "source_column": "max_abs_rho_minus_1",
+     "scale": 1,
+     "decimals": 3,
+     "header": "|-1|"
+    },
+    {
+     "table_column": 4,
+     "source_column": "ratio_A2_over_A0",
+     "scale": 1,
+     "decimals": 2,
+     "header": "Ratio"
+    }
+   ]
+  },
+  {
+   "table_index": 41,
+   "label": "tab:S_held_case9",
+   "caption_start": "Held-out family with a non-uniform dispatch, case9 (six runs for case9, four for",
+   "source": "results/case9_heldout_dispatch.csv",
+   "row_mode": "all",
+   "columns": [
+    {
+     "table_column": 0,
+     "source_column": "mu_after",
+     "scale": 1,
+     "decimals": 1,
+     "header": "Step"
+    },
+    {
+     "table_column": 1,
+     "source_column": "rmse_A0",
+     "scale": 1,
+     "decimals": 3,
+     "header": "A0"
+    },
+    {
+     "table_column": 2,
+     "source_column": "rmse_A2",
+     "scale": 1,
+     "decimals": 3,
+     "header": "A2"
+    },
+    {
+     "table_column": 3,
+     "source_column": "rmse_oracle",
+     "scale": 1,
+     "decimals": 3,
+     "header": "Oracle"
+    },
+    {
+     "table_column": 4,
+     "source_column": "rmse_gate",
+     "scale": 1,
+     "decimals": 3,
+     "header": "Gate"
+    },
+    {
+     "table_column": 5,
+     "source_column": "rmse_reconcile",
+     "scale": 1,
+     "decimals": 3,
+     "header": "Reconc."
+    },
+    {
+     "table_column": 6,
+     "source_column": "mean_rho_estimate",
+     "scale": 1,
+     "decimals": 3,
+     "header": ""
+    }
+   ]
+  },
+  {
+   "table_index": 42,
+   "label": "tab:S_held_case39",
+   "caption_start": "Held-out family with a non-uniform dispatch, case39 (six runs for case9, four fo",
+   "source": "results/case39_heldout_dispatch.csv",
+   "row_mode": "all",
+   "columns": [
+    {
+     "table_column": 0,
+     "source_column": "mu_after",
+     "scale": 1,
+     "decimals": 1,
+     "header": "Step"
+    },
+    {
+     "table_column": 1,
+     "source_column": "rmse_A0",
+     "scale": 1,
+     "decimals": 3,
+     "header": "A0"
+    },
+    {
+     "table_column": 2,
+     "source_column": "rmse_A2",
+     "scale": 1,
+     "decimals": 3,
+     "header": "A2"
+    },
+    {
+     "table_column": 3,
+     "source_column": "rmse_oracle",
+     "scale": 1,
+     "decimals": 3,
+     "header": "Oracle"
+    },
+    {
+     "table_column": 4,
+     "source_column": "rmse_gate",
+     "scale": 1,
+     "decimals": 3,
+     "header": "Gate"
+    },
+    {
+     "table_column": 5,
+     "source_column": "rmse_reconcile",
+     "scale": 1,
+     "decimals": 3,
+     "header": "Reconc."
+    },
+    {
+     "table_column": 6,
+     "source_column": "mean_rho_estimate",
+     "scale": 1,
+     "decimals": 3,
+     "header": ""
+    }
+   ]
+  },
+  {
+   "table_index": 45,
+   "label": "tab:wser",
+   "caption_start": "Worked example, case9: state RMSE of the three predictors along the one-second w",
+   "source": "results/worked_example_case9_prediction.csv",
+   "row_mode": "all",
+   "columns": [
+    {
+     "table_column": 0,
+     "source_column": "t_s",
+     "scale": 1,
+     "decimals": 1,
+     "header": "t [s]"
+    },
+    {
+     "table_column": 1,
+     "source_column": "rmse_A0",
+     "scale": 1,
+     "decimals": 3,
+     "header": "A0"
+    },
+    {
+     "table_column": 2,
+     "source_column": "rmse_A1",
+     "scale": 1,
+     "decimals": 3,
+     "header": "A1"
+    },
+    {
+     "table_column": 3,
+     "source_column": "rmse_A2",
+     "scale": 1,
+     "decimals": 3,
+     "header": "A2"
+    }
+   ]
+  },
+  {
+   "table_index": 46,
+   "label": "tab:w39",
+   "caption_start": "Worked example, case39: state RMSE of the three predictors along the one-second ",
+   "source": "results/worked_example_case39_prediction.csv",
+   "row_mode": "all",
+   "columns": [
+    {
+     "table_column": 0,
+     "source_column": "t_s",
+     "scale": 1,
+     "decimals": 1,
+     "header": "t [s]"
+    },
+    {
+     "table_column": 1,
+     "source_column": "rmse_A0",
+     "scale": 1,
+     "decimals": 3,
+     "header": "A0"
+    },
+    {
+     "table_column": 2,
+     "source_column": "rmse_A1",
+     "scale": 1,
+     "decimals": 3,
+     "header": "A1"
+    },
+    {
+     "table_column": 3,
+     "source_column": "rmse_A2",
+     "scale": 1,
+     "decimals": 3,
+     "header": "A2"
+    }
+   ]
+  },
+  {
+   "table_index": 48,
+   "label": null,
+   "caption_start": "Detectability check.",
+   "source": "results/detectability.csv",
+   "row_mode": "all",
+   "columns": [
+    {
+     "table_column": 1,
+     "source_column": "mu",
+     "scale": 1,
+     "decimals": 2,
+     "header": "step"
+    },
+    {
+     "table_column": 2,
+     "source_column": "kappa_lowest_order",
+     "scale": 1,
+     "decimals": 3,
+     "header": "_ lo"
+    },
+    {
+     "table_column": 3,
+     "source_column": "kappa_fd",
+     "scale": 1,
+     "decimals": 3,
+     "header": "_ fd"
+    },
+    {
+     "table_column": 4,
+     "source_column": "score_one_step",
+     "scale": 1,
+     "decimals": 4,
+     "header": "s"
+    },
+    {
+     "table_column": 5,
+     "source_column": "rho_after_one_GN_step",
+     "scale": 1,
+     "decimals": 4,
+     "header": ""
+    }
+   ]
+  },
+  {
+   "table_index": 49,
+   "label": null,
+   "caption_start": "Case39, one-second state RMSE from $0.6$",
+   "source": "results/case39_application_scan_merged.csv",
+   "row_mode": "all",
+   "columns": [
+    {
+     "table_column": 0,
+     "source_column": "mu_after",
+     "scale": 100,
+     "decimals": 0,
+     "header": "Step",
+     "offset": -1
+    },
+    {
+     "table_column": 1,
+     "source_column": "rmse_A0",
+     "scale": 1,
+     "decimals": 3,
+     "header": "A0"
+    },
+    {
+     "table_column": 2,
+     "source_column": "rmse_A2",
+     "scale": 1,
+     "decimals": 3,
+     "header": "A2"
+    },
+    {
+     "table_column": 3,
+     "source_column": "rmse_oracle",
+     "scale": 1,
+     "decimals": 3,
+     "header": "Oracle"
+    },
+    {
+     "table_column": 4,
+     "source_column": "rmse_gate",
+     "scale": 1,
+     "decimals": 3,
+     "header": "Gate"
+    },
+    {
+     "table_column": 5,
+     "source_column": "rmse_reconcile",
+     "scale": 1,
+     "decimals": 3,
+     "header": "Reconc."
+    },
+    {
+     "table_column": 6,
+     "source_column": "mean_rho_estimate",
+     "scale": 1,
+     "decimals": 3,
+     "header": "rho est."
+    },
+    {
+     "table_column": 7,
+     "source_column": "detection_delay_s",
+     "scale": 1,
+     "decimals": 3,
+     "header": "Delay [s]"
+    }
+   ]
+  },
+  {
+   "table_index": 50,
+   "label": null,
+   "caption_start": "Case39, closed loop after a $5\\%$ step: RMS speed deviation [rad/s] and share of",
+   "source": "results/case39_application_authority.csv",
+   "row_mode": "all",
+   "columns": [
+    {
+     "table_column": 0,
+     "source_column": "authority_scale",
+     "scale": 1,
+     "decimals": 0,
+     "header": "Bound"
+    },
+    {
+     "table_column": 2,
+     "source_column": "w_rms",
+     "scale": 1,
+     "decimals": 3,
+     "header": "_ rms"
+    },
+    {
+     "table_column": 3,
+     "source_column": "input_at_bound_share",
+     "scale": 1,
+     "decimals": 2,
+     "header": "at bound"
+    }
+   ]
+  },
+  {
+   "table_index": 65,
+   "label": "tab:A:scalar_cl",
+   "caption_start": "Scalar benchmark, closed loop, mean over",
+   "source": "results/scalar_closed_loop.csv",
+   "row_mode": "all",
+   "columns": [
+    {
+     "table_column": 1,
+     "source_column": "iae_mean",
+     "scale": 1,
+     "decimals": 3,
+     "header": "IAE"
+    },
+    {
+     "table_column": 2,
+     "source_column": "iae_lo",
+     "scale": 1,
+     "decimals": 3,
+     "header": "95% CI (IAE)",
+     "ci": [
+      "iae_lo",
+      "iae_hi"
+     ]
+    },
+    {
+     "table_column": 3,
+     "source_column": "last_mean",
+     "scale": 1,
+     "decimals": 3,
+     "header": "Last 3 s err."
+    },
+    {
+     "table_column": 4,
+     "source_column": "viol_mean",
+     "scale": 1,
+     "decimals": 3,
+     "header": "Viol."
+    },
+    {
+     "table_column": 5,
+     "source_column": "dpeak_mean",
+     "scale": 1,
+     "decimals": 3,
+     "header": "Peak"
+    },
+    {
+     "table_column": 6,
+     "source_column": "solve_ms_mean",
+     "scale": 1,
+     "decimals": 1,
+     "header": "t_solve [ms]"
+    }
+   ]
+  },
+  {
+   "table_index": 70,
+   "label": "tab:A:net_cl",
+   "caption_start": "Network closed loop at elevated loading",
+   "source": [
+    "results/case9_closed_loop.csv",
+    "results/case39_closed_loop.csv"
+   ],
+   "row_mode": "all",
+   "columns": [
+    {
+     "table_column": 2,
+     "source_column": "angle_peak_deg_mean",
+     "scale": 1,
+     "decimals": 2,
+     "header": "Peak [deg]"
+    },
+    {
+     "table_column": 3,
+     "source_column": "w_rms_mean",
+     "scale": 1,
+     "decimals": 3,
+     "header": "w rms"
+    },
+    {
+     "table_column": 4,
+     "source_column": "u_energy_mean",
+     "scale": 1,
+     "decimals": 1,
+     "header": "E_u"
+    },
+    {
+     "table_column": 5,
+     "source_column": "solve_ms_mean",
+     "scale": 1,
+     "decimals": 0,
+     "header": "t_solve [ms]"
+    }
+   ]
+  }
+ ]
+}
