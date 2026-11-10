@@ -1,0 +1,24 @@
+omega-slope spread across generators (differential part of the COI-speed feedback): 0.000 vs a_om 0.000
+case39 stress=False gbar=45.0 Omega_bar=1.5 lamp=0.08: rho_cal=0 rho_test=0; phi: rigorous=54.274 calibrated(cal states)=9.053 test-state max=8.959; Lam: rigorous=1.180 calibrated=0.362 test=0.369
+d0=4.000 a_om_max=0.000 (d=d0-a_om=4.000, no sign requirement in Thm 3) theta_bar=0.000
+windows 130, hypotheses (Omega_bar, regularity level) hold on 123
+violations (rig): span 0, angle 0 of 1230
+violations (cal): span 0, angle 0 of 1230
+ j | max obs span | max obs ang | span bnd rig | ang bnd rig (x max obs) | span bnd cal | ang bnd cal (x max obs) | paper conformal env
+ 1 | 1.150e-03 | 1.093e-02 | 1.669e-01 | 2.236e-01 ( 20.5x) | 2.784e-02 | 4.553e-02 (  4.2x) | 1.242e-02
+ 2 | 6.686e-03 | 1.927e-02 | 5.138e-01 | 6.271e-01 ( 32.5x) | 8.570e-02 | 1.211e-01 (  6.3x) | 2.207e-02
+ 3 | 1.693e-02 | 2.534e-02 | 1.055e+00 | 1.225e+00 ( 48.3x) | 1.759e-01 | 2.290e-01 (  9.0x) | 2.874e-02
+ 4 | 2.848e-02 | 2.887e-02 | 1.693e+00 | 1.882e+00 ( 65.2x) | 2.824e-01 | 3.414e-01 ( 11.8x) | 3.322e-02
+ 5 | 3.697e-02 | 2.982e-02 | 2.381e+00 | 2.570e+00 ( 86.2x) | 3.972e-01 | 4.562e-01 ( 15.3x) | 3.666e-02
+ 6 | 4.239e-02 | 3.284e-02 | 3.123e+00 | 3.312e+00 (100.9x) | 5.210e-01 | 5.800e-01 ( 17.7x) | -
+ 7 | 4.359e-02 | 3.708e-02 | 3.923e+00 | 4.112e+00 (110.9x) | 6.544e-01 | 7.133e-01 ( 19.2x) | -
+ 8 | 4.770e-02 | 3.983e-02 | 4.785e+00 | 4.974e+00 (124.9x) | 7.982e-01 | 8.571e-01 ( 21.5x) | -
+ 9 | 5.024e-02 | 4.117e-02 | 5.714e+00 | 5.903e+00 (143.4x) | 9.531e-01 | 1.012e+00 ( 24.6x) | -
+10 | 5.100e-02 | 4.070e-02 | 6.716e+00 | 6.904e+00 (169.6x) | 1.120e+00 | 1.179e+00 ( 29.0x) | -
+violations (cross_rig): angle 0 of 1230
+violations (cross_cal): angle 0 of 1230
+cross-term bound j=1: rig 2.249e-01 (20.6x max obs) | cal 4.575e-02 (4.2x max obs)
+cross-term bound j=3: rig 1.228e+00 (48.5x max obs) | cal 2.296e-01 (9.1x max obs)
+cross-term bound j=5: rig 2.563e+00 (86.0x max obs) | cal 4.549e-01 (15.3x max obs)
+cross-term bound j=7: rig 3.939e+00 (106.2x max obs) | cal 6.845e-01 (18.5x max obs)
+cross-term bound j=10: rig 5.890e+00 (144.7x max obs) | cal 1.010e+00 (24.8x max obs)

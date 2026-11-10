@@ -1,0 +1,29 @@
+case39 stress=False load_scale=1.0 gbar=45.0 deg   ng=10
+rho_cal(max over calibration states)=0.336 rad/s^2 ; test-state max=0.3544  (assumption rho >= test max: FAILS on test data, using test max for theorem check)
+observed max |omega| = 2.390 rad/s ; observed max constrained angle = 25.41 deg
+constants: c0=0.707 lam2(K1)=7.429 d=-0.820 theta_bar=2.428 Lam(load->angle per unit lambda)=1.1804 rad  Wl=73.81 (l1 190, J 73.8) sqrtM=1.250 Mmin=0.1078
+residual Lipschitz: a_psi= [25.59  24.618 23.118 24.875 23.798 22.259 23.8   24.77  23.829 24.217]  a_om= [2.452 2.258 1.627 2.096 1.616 1.275 1.788 3.1   1.564 4.02 ]  Dphys/M= [3.2 3.2 3.2 3.2 3.2 3.2 3.2 3.2 3.2 3.2]
+  span_pot = 2 * np.sqrt(Vs / (k['c0'] * k['lam2']))
+  sp_vel = np.cumsum(dts * 2 * np.sqrt(2 * Vs / Mmin))
+  Vs = run(Om); Om_new = Omega_pred + 2 * np.sqrt(2 * Vs.max() / Mmin) if fixed_omega is None else Om
+Omega_bar (hypothesis: plant and predicted speed span <= Omega_bar) = 1.5
+windows 130; windows where the hypotheses (speed span <= Omega_bar, angle level + span(e) <= gbar) hold on the observed trajectories: 120
+self-consistent (bootstrapped) Omega bound finite? median final-step span bound with bootstrap = nan
+violations among assumption-satisfying windows:  span_obs > span_bnd: 0 ; ang_obs > ang_bnd: 0  (of 1200 samples)
+violations over ALL windows:  span 0 ; angle 0
+ j | t[s] | med obs span | med span bound | ratio(max obs vs bound) | med obs ang | max obs ang | ang bound (med) | bound/maxobs | conformal envelope (paper)
+ 1 | 0.1 | 5.176e-04 | nan |     nan | 4.506e-03 | 1.088e-02 | nan |     nan | 1.242e-02
+ 2 | 0.2 | 3.108e-03 | nan |     nan | 8.394e-03 | 1.910e-02 | nan |     nan | 2.207e-02
+ 3 | 0.3 | 7.720e-03 | nan |     nan | 1.042e-02 | 2.495e-02 | nan |     nan | 2.874e-02
+ 4 | 0.4 | 1.264e-02 | nan |     nan | 1.248e-02 | 2.844e-02 | nan |     nan | 3.322e-02
+ 5 | 0.5 | 1.642e-02 | nan |     nan | 1.455e-02 | 2.973e-02 | nan |     nan | 3.666e-02
+ 6 | 0.6 | 1.854e-02 | nan |     nan | 1.619e-02 | 3.288e-02 | nan |     nan | -
+ 7 | 0.7 | 2.117e-02 | nan |     nan | 1.630e-02 | 3.701e-02 | nan |     nan | -
+ 8 | 0.8 | 2.148e-02 | nan |     nan | 1.539e-02 | 4.014e-02 | nan |     nan | -
+ 9 | 0.9 | 1.971e-02 | nan |     nan | 1.395e-02 | 4.164e-02 | nan |     nan | -
+10 | 1.0 | 1.913e-02 | nan |     nan | 1.113e-02 | 4.117e-02 | nan |     nan | -
+component split at j=5: pot-route span nan, velocity-route span nan, load-angle term 1.889e-01
+
+real	0m28.502s
+user	0m27.288s
+sys	0m0.341s

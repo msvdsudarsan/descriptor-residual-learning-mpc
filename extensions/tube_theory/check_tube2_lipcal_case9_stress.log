@@ -1,0 +1,18 @@
+CALIBRATED Lipschitz box (psi<=0.599 rad, |omega|<=2.55): a_psi_max=25.12 a_om_max=1.57 theta_bar=2.834 dom_spread=1.028
+omega-slope spread across generators (differential part of the COI-speed feedback): 1.028 vs a_om 1.571
+case9 stress=True gbar=60.0 Omega_bar=3.0 lamp=0.11: rho_cal=0.312 rho_test=0.3514; phi: rigorous=31.356 calibrated(cal states)=3.037 test-state max=2.960; Lam: rigorous=1.554 calibrated=0.399 test=0.399
+d0=3.200 a_om_max=1.571 (d=d0-a_om=1.629, no sign requirement in Thm 3) theta_bar=2.834
+windows 130, hypotheses (Omega_bar, regularity level) hold on 130
+violations (rig): span 0, angle 0 of 1300
+violations (cal): span 0, angle 0 of 1300
+ j | max obs span | max obs ang | span bnd rig | ang bnd rig (x max obs) | span bnd cal | ang bnd cal (x max obs) | paper conformal env
+ 1 | 1.362e-03 | 1.932e-02 | 2.736e-01 | 3.762e-01 ( 19.5x) | 4.992e-02 | 7.627e-02 (  3.9x) | 2.312e-02
+ 2 | 8.847e-03 | 3.542e-02 | 9.286e-01 | 1.134e+00 ( 32.0x) | 1.674e-01 | 2.201e-01 (  6.2x) | 4.300e-02
+ 3 | 2.285e-02 | 4.847e-02 | 2.142e+00 | 2.450e+00 ( 50.5x) | 3.938e-01 | 4.729e-01 (  9.8x) | 5.763e-02
+ 4 | 3.917e-02 | 5.942e-02 | 4.004e+00 | 4.346e+00 ( 73.1x) | 7.667e-01 | 8.545e-01 ( 14.4x) | 6.872e-02
+ 5 | 5.179e-02 | 6.953e-02 | 6.736e+00 | 7.078e+00 (101.8x) | 1.342e+00 | 1.430e+00 ( 20.6x) | 7.761e-02
+ 6 | 6.167e-02 | 7.427e-02 | 1.075e+01 | 1.109e+01 (149.3x) | 2.209e+00 | 2.297e+00 ( 30.9x) | -
+ 7 | 6.572e-02 | 7.504e-02 | 1.664e+01 | 1.699e+01 (226.3x) | 3.501e+00 | 3.589e+00 ( 47.8x) | -
+ 8 | 6.608e-02 | 7.132e-02 | 2.531e+01 | 2.565e+01 (359.7x) | 5.414e+00 | 5.502e+00 ( 77.1x) | -
+ 9 | 6.239e-02 | 7.443e-02 | 3.805e+01 | 3.839e+01 (515.8x) | 8.237e+00 | 8.325e+00 (111.8x) | -
+10 | 6.127e-02 | 7.731e-02 | 5.678e+01 | 5.712e+01 (738.9x) | 1.240e+01 | 1.248e+01 (161.5x) | -

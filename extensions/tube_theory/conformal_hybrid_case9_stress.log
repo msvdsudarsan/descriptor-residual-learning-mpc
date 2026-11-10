@@ -1,0 +1,24 @@
+case9 stress=True: generating runs ...
+Lam rigorous 1.554  calibrated 0.400 (rad per unit lambda); lambda_bar(t)=[0.066 0.132 0.198 0.22  0.22 ]
+step k (t[s])      :     0.1     0.2     0.3     0.4     0.5
+direct conformal on total angle error (paper-type, alpha=0.05)   1.208   2.219   2.992   3.637   4.144 deg
+H1: q_span(0.05) + rigorous Lam*lbar  [G=1]                      6.014  12.340  19.111  22.067  22.777 deg
+H2: q_span(0.05) + calibrated Lam*lbar [G=1]                     1.651   3.614   6.021   7.523   8.233 deg
+H3: q_span(alpha/2) + q_load(alpha/2) [union, G=1]               1.415   3.180   5.175   6.715   7.826 deg
+H4: q_rot(0.05)[conformal on rotor part] + calibrated Lam*lbar   1.551   3.195   4.960   5.731   5.935 deg
+median observed total angle error (cal runs max-level):   0.703   1.326   1.835   2.393   2.882 deg
+
+EMPIRICAL COVERAGE (fraction of fresh runs whose angle error stays <= margin at all k=1..5 for every window):
+                                                               in-family (100 OOD: load amp  OOD: initial o
+direct conformal on total angle error (paper-type, alpha=0.05) 0.950          0.450          1.000         
+H1: q_span(0.05) + rigorous Lam*lbar  [G=1]                    1.000          1.000          1.000         
+H2: q_span(0.05) + calibrated Lam*lbar [G=1]                   1.000          0.900          1.000         
+H3: q_span(alpha/2) + q_load(alpha/2) [union, G=1]             1.000          0.750          1.000         
+H4: q_rot(0.05)[conformal on rotor part] + calibrated Lam*lbar 1.000          0.850          1.000         
+span-only coverage (q_span, alpha=0.05; claim >= 0.95): {'in-family (1': 0.95, 'OOD: load am': 0.3, 'OOD: initial': 0.975}
+Lemma-1 deterministic check on every run/step: rotor-part error <= span : violations 0
+load-term deterministic check (calibrated Lam, in-family): load-part error <= Lam_cal*lbar violations 0 ; OOD amp: 45
+
+real	0m41.353s
+user	0m28.079s
+sys	0m0.391s
