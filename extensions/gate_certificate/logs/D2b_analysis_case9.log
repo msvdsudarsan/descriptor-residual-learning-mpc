@@ -1,0 +1,41 @@
+case9: pre-step score: mean 0.00608 rms 0.00719 (q0 = 0.02384; q0/mean = 3.92); kappa0 = 1.0782; B (95% conformal, max unsmoothed null score) = 0.02430
+thresholds on q = smoothed/q0: alarm 1; tau<0.8 at 1.89; tau<0.5 (a=0.25) at 3.77
+step   N      | mean score j=1..3 meas [CI half] | RSS-pred j>=3 (k0 | kfd) ; noise-free meas/(k0*D) | alarm delay (samples)  | fallback tau<.5 delay  | plug-in j* / bound
+  -25% 300    | 0.2573 0.2576 0.2573 (+-0.0005) | pred 0.2696 | 0.2573 ; nf ratio 0.95 (sd 0.02) | alarm mean 1.00 med 1 bootCI [1.00,1.00] detected 300/300 pre-alarm@30 0.000 | fallback detected 300/300 mean 1.63 | j*=1 fb j*=1 bound=1
+        P(alarm delay <= plug-in j*=1) = 1.000 CP95 [0.988,1.000]; P(delay <= j*+1) = 1.000; late-mean score (j=4..10) 0.2573 vs pred 0.2696
+        bound (B+kappa_fd): guaranteed alarm by sample 1; empirical P(delay <= 1) = 1.000 CP95 [0.988,1.000] (nominal >= 0.95 if B and linearity hold)
+        noise-free innovation / (kappa0|D|) at sample 31: mean 0.955; at 33: 0.954; fraction of noisy post-step scores (j=3..10) below kappa_fd|D| - B: 0.0000
+  -10% 300    | 0.1025 0.1026 0.1027 (+-0.0006) | pred 0.1081 | 0.1031 ; nf ratio 0.95 (sd 0.05) | alarm mean 1.00 med 1 bootCI [1.00,1.00] detected 300/300 pre-alarm@30 0.000 | fallback detected 300/300 mean 3.01 | j*=1 fb j*=3 bound=1
+        P(alarm delay <= plug-in j*=1) = 1.000 CP95 [0.988,1.000]; P(delay <= j*+1) = 1.000; late-mean score (j=4..10) 0.1027 vs pred 0.1081
+        bound (B+kappa_fd): guaranteed alarm by sample 1; empirical P(delay <= 1) = 1.000 CP95 [0.988,1.000] (nominal >= 0.95 if B and linearity hold)
+        noise-free innovation / (kappa0|D|) at sample 31: mean 0.951; at 33: 0.951; fraction of noisy post-step scores (j=3..10) below kappa_fd|D| - B: 0.0000
+   -5% 300    | 0.0509 0.0510 0.0512 (+-0.0006) | pred 0.0544 | 0.0519 ; nf ratio 0.94 (sd 0.10) | alarm mean 1.83 med 2 bootCI [1.79,1.88] detected 300/300 pre-alarm@30 0.000 | fallback detected 0/300 mean nan | j*=2 fb j*=nan bound=3
+        P(alarm delay <= plug-in j*=2) = 1.000 CP95 [0.988,1.000]; P(delay <= j*+1) = 1.000; late-mean score (j=4..10) 0.0512 vs pred 0.0544
+        bound (B+kappa_fd): guaranteed alarm by sample 3; empirical P(delay <= 3) = 1.000 CP95 [0.988,1.000] (nominal >= 0.95 if B and linearity hold)
+        noise-free innovation / (kappa0|D|) at sample 31: mean 0.944; at 33: 0.946; fraction of noisy post-step scores (j=3..10) below kappa_fd|D| - B: 0.0000
+   +1% 300    | 0.0123 0.0122 0.0121 (+-0.0006) | pred 0.0130 | 0.0125 ; nf ratio 1.08 (sd 0.49) | alarm mean 7.59 med 6 bootCI [6.25,9.00] detected 44/300 pre-alarm@30 0.000 | fallback detected 0/300 mean nan | j*=nan fb j*=nan bound=nan
+        bound gives no guarantee (kappa_fd*|D| - B = -0.0140 <= q0 = 0.0238)
+        noise-free innovation / (kappa0|D|) at sample 31: mean 1.078; at 33: 1.074; fraction of noisy post-step scores (j=3..10) below kappa_fd|D| - B: n/a
+   +2% 300    | 0.0220 0.0219 0.0217 (+-0.0007) | pred 0.0227 | 0.0218 ; nf ratio 1.00 (sd 0.27) | alarm mean 6.55 med 5 bootCI [5.99,7.12] detected 229/300 pre-alarm@30 0.000 | fallback detected 0/300 mean nan | j*=nan fb j*=nan bound=nan
+        bound gives no guarantee (kappa_fd*|D| - B = -0.0037 <= q0 = 0.0238)
+        noise-free innovation / (kappa0|D|) at sample 31: mean 1.002; at 33: 0.997; fraction of noisy post-step scores (j=3..10) below kappa_fd|D| - B: n/a
+   +3% 300    | 0.0322 0.0321 0.0319 (+-0.0007) | pred 0.0331 | 0.0317 ; nf ratio 0.99 (sd 0.19) | alarm mean 2.77 med 3 bootCI [2.66,2.89] detected 300/300 pre-alarm@30 0.000 | fallback detected 0/300 mean nan | j*=2 fb j*=nan bound=nan
+        P(alarm delay <= plug-in j*=2) = 0.387 CP95 [0.331,0.444]; P(delay <= j*+1) = 0.923; late-mean score (j=4..10) 0.0318 vs pred 0.0331
+        bound gives no guarantee (kappa_fd*|D| - B = 0.0065 <= q0 = 0.0238)
+        noise-free innovation / (kappa0|D|) at sample 31: mean 0.986; at 33: 0.982; fraction of noisy post-step scores (j=3..10) below kappa_fd|D| - B: 0.0000
+   +5% 300    | 0.0527 0.0526 0.0525 (+-0.0007) | pred 0.0544 | 0.0519 ; nf ratio 0.97 (sd 0.11) | alarm mean 1.81 med 2 bootCI [1.77,1.85] detected 300/300 pre-alarm@30 0.000 | fallback detected 0/300 mean nan | j*=2 fb j*=nan bound=3
+        P(alarm delay <= plug-in j*=2) = 1.000 CP95 [0.988,1.000]; P(delay <= j*+1) = 1.000; late-mean score (j=4..10) 0.0524 vs pred 0.0544
+        bound (B+kappa_fd): guaranteed alarm by sample 3; empirical P(delay <= 3) = 1.000 CP95 [0.988,1.000] (nominal >= 0.95 if B and linearity hold)
+        noise-free innovation / (kappa0|D|) at sample 31: mean 0.975; at 33: 0.972; fraction of noisy post-step scores (j=3..10) below kappa_fd|D| - B: 0.0000
+  +10% 300    | 0.1044 0.1043 0.1042 (+-0.0007) | pred 0.1081 | 0.1031 ; nf ratio 0.97 (sd 0.06) | alarm mean 1.00 med 1 bootCI [1.00,1.00] detected 300/300 pre-alarm@30 0.000 | fallback detected 300/300 mean 3.03 | j*=1 fb j*=3 bound=1
+        P(alarm delay <= plug-in j*=1) = 1.000 CP95 [0.988,1.000]; P(delay <= j*+1) = 1.000; late-mean score (j=4..10) 0.1041 vs pred 0.1081
+        bound (B+kappa_fd): guaranteed alarm by sample 1; empirical P(delay <= 1) = 1.000 CP95 [0.988,1.000] (nominal >= 0.95 if B and linearity hold)
+        noise-free innovation / (kappa0|D|) at sample 31: mean 0.967; at 33: 0.966; fraction of noisy post-step scores (j=3..10) below kappa_fd|D| - B: 0.0000
+  +25% 300    | 0.2600 0.2597 0.2600 (+-0.0008) | pred 0.2696 | 0.2571 ; nf ratio 0.96 (sd 0.03) | alarm mean 1.00 med 1 bootCI [1.00,1.00] detected 300/300 pre-alarm@30 0.000 | fallback detected 300/300 mean 1.52 | j*=1 fb j*=1 bound=1
+        P(alarm delay <= plug-in j*=1) = 1.000 CP95 [0.988,1.000]; P(delay <= j*+1) = 1.000; late-mean score (j=4..10) 0.2600 vs pred 0.2696
+        bound (B+kappa_fd): guaranteed alarm by sample 1; empirical P(delay <= 1) = 1.000 CP95 [0.988,1.000] (nominal >= 0.95 if B and linearity hold)
+        noise-free innovation / (kappa0|D|) at sample 31: mean 0.964; at 33: 0.965; fraction of noisy post-step scores (j=3..10) below kappa_fd|D| - B: 0.0000
+  +50% 300    | 0.5215 0.5212 0.5229 (+-0.0010) | pred 0.5391 | 0.5144 ; nf ratio 0.97 (sd 0.02) | alarm mean 1.00 med 1 bootCI [1.00,1.00] detected 300/300 pre-alarm@30 0.000 | fallback detected 300/300 mean 1.00 | j*=1 fb j*=1 bound=1
+        P(alarm delay <= plug-in j*=1) = 1.000 CP95 [0.988,1.000]; P(delay <= j*+1) = 1.000; late-mean score (j=4..10) 0.5238 vs pred 0.5391
+        bound (B+kappa_fd): guaranteed alarm by sample 1; empirical P(delay <= 1) = 1.000 CP95 [0.988,1.000] (nominal >= 0.95 if B and linearity hold)
+        noise-free innovation / (kappa0|D|) at sample 31: mean 0.967; at 33: 0.970; fraction of noisy post-step scores (j=3..10) below kappa_fd|D| - B: 0.0000
