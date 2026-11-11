@@ -1,0 +1,61 @@
+case,kind,cell,comparison,n,verdict,p_unadjusted,p_holm,survives_holm_0.05
+case9,pred,M0a,P2-P1c,8,equivalent,0.000373,0.00412,True
+case9,pred,M0a,P3-P2,8,equivalent,4.84e-20,2.51e-18,True
+case9,pred,M1a,P2-P1c,8,equivalent,8.35e-05,0.00109,True
+case9,pred,M1a,P3-P2,8,equivalent,3.69e-19,1.84e-17,True
+case9,pred,M1b,P2-P1c,8,first better,8.79e-17,4.22e-15,True
+case9,pred,M1b,P3-P2,8,equivalent,1.85e-27,1.03e-25,True
+case9,pred,M2a,P2-P1c,8,equivalent,4.52e-09,1.45e-07,True
+case9,pred,M2a,P3-P2,8,equivalent,1.26e-15,5.78e-14,True
+case9,pred,M2b,P2-P1c,8,equivalent,1.77e-05,0.000336,True
+case9,pred,M2b,P3-P2,8,equivalent,5.41e-22,2.92e-20,True
+case9,cl,M0x1,P2-P1*,6,equivalent,1.67e-11,6.67e-10,True
+case9,cl,M0x1,P2-C0eq,6,INCONCLUSIVE,1,1,n/a
+case9,cl,M0x1,P2-C0,6,first better,4.11e-06,9.85e-05,True
+case9,cl,M0x1,P3-P2,6,equivalent,2.42e-14,1.04e-12,True
+case9,cl,M0x1,P2-A0,6,first better,1.67e-06,4.17e-05,True
+case9,cl,M0x3,P2-P1*,6,first better,4.45e-06,0.000102,True
+case9,cl,M0x3,P2-C0eq,6,first better,8.62e-09,2.67e-07,True
+case9,cl,M0x3,P2-C0,6,first better,1.28e-08,3.85e-07,True
+case9,cl,M0x3,P3-P2,6,equivalent,0.000343,0.00412,True
+case9,cl,M0x3,P2-A0,6,first better,1.89e-10,6.82e-09,True
+case9,cl,M1x1,P2-P1*,6,equivalent,0,0,True
+case9,cl,M1x1,P2-C0eq,6,equivalent,2.93e-19,1.49e-17,True
+case9,cl,M1x1,P2-C0,6,equivalent,3.49e-24,1.92e-22,True
+case9,cl,M1x1,P3-P2,6,equivalent,0,0,True
+case9,cl,M1x1,P2-A0,6,equivalent,2.27e-21,1.2e-19,True
+case9,cl,M1x3,P2-P1*,6,equivalent,0.00833,0.0333,True
+case9,cl,M1x3,P2-C0eq,6,INCONCLUSIVE,1,1,n/a
+case9,cl,M1x3,P2-C0,6,first better,3.08e-08,8.61e-07,True
+case9,cl,M1x3,P3-P2,6,equivalent,1.69e-10,6.24e-09,True
+case9,cl,M1x3,P2-A0,6,first better,4.49e-07,1.17e-05,True
+case39,pred,M0a,P2-P1c,5,equivalent,0.0039,0.0195,True
+case39,pred,M0a,P3-P2,5,equivalent,5.99e-10,1.98e-08,True
+case39,pred,M1a,P2-P1c,5,equivalent,6.91e-05,0.000967,True
+case39,pred,M1a,P3-P2,5,equivalent,2.04e-16,9.61e-15,True
+case39,pred,M1b,P2-P1c,5,equivalent,6.23e-08,1.68e-06,True
+case39,pred,M1b,P3-P2,5,equivalent,1.41e-12,5.91e-11,True
+case39,pred,M2a,P2-P1c,5,equivalent,3.02e-05,0.000544,True
+case39,pred,M2a,P3-P2,5,equivalent,3.19e-05,0.000544,True
+case39,pred,M2b,P2-P1c,5,equivalent,0.000827,0.00744,True
+case39,pred,M2b,P3-P2,5,equivalent,4.92e-10,1.67e-08,True
+case39,cl,M0x1,P2-P1*,4,equivalent,2.72e-08,7.89e-07,True
+case39,cl,M0x1,P2-C0eq,4,equivalent,0.00114,0.00912,True
+case39,cl,M0x1,P2-C0,4,first better,0.00062,0.0062,True
+case39,cl,M0x1,P3-P2,4,equivalent,4.97e-11,1.89e-09,True
+case39,cl,M0x1,P2-A0,4,first better,5.19e-05,0.00083,True
+case39,cl,M0x3,P2-P1*,4,equivalent,6.16e-06,0.000136,True
+case39,cl,M0x3,P2-C0eq,4,first better,0.00127,0.00912,True
+case39,cl,M0x3,P2-C0,4,first better,9.31e-06,0.000195,True
+case39,cl,M0x3,P3-P2,4,equivalent,5.8e-05,0.00087,True
+case39,cl,M0x3,P2-A0,4,first better,0.00121,0.00912,True
+case39,cl,M1x1,P2-P1*,4,equivalent,0,0,True
+case39,cl,M1x1,P2-C0eq,4,equivalent,5.23e-12,2.14e-10,True
+case39,cl,M1x1,P2-C0,4,equivalent,5.93e-15,2.61e-13,True
+case39,cl,M1x1,P3-P2,4,equivalent,0,0,True
+case39,cl,M1x1,P2-A0,4,equivalent,1.84e-11,7.18e-10,True
+case39,cl,M1x3,P2-P1*,4,equivalent,4.83e-15,2.17e-13,True
+case39,cl,M1x3,P2-C0eq,4,equivalent,3.85e-10,1.35e-08,True
+case39,cl,M1x3,P2-C0,4,first better,1.41e-05,0.000283,True
+case39,cl,M1x3,P3-P2,4,equivalent,3.59e-18,1.76e-16,True
+case39,cl,M1x3,P2-A0,4,first better,0.00991,0.0333,True
