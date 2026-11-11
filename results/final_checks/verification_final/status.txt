@@ -1,0 +1,4 @@
+pytest exit 0
+run_checks exit 0
+run_all exit 0
+ALLDONE
