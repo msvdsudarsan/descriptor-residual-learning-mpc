@@ -1,0 +1,13 @@
+line_index,from_bus_idx,to_bus_idx,status,rmse_A0,rmse_A2,ratio_A2_over_A0
+0,0,1,ok,0.8914749,0.20230495,0.22693286
+4,1,29,no_equilibrium,nan,nan,nan
+8,3,13,ok,0.89184057,0.11607355,0.13015056
+12,5,10,ok,0.89348027,0.21468484,0.24027933
+16,8,38,ok,0.88576781,0.15541574,0.17545878
+20,11,10,ok,0.89725947,0.20275063,0.22596656
+24,14,15,ok,0.8970154,0.22400939,0.24972747
+28,15,23,ok,0.89028411,0.15097514,0.16958086
+32,18,32,no_equilibrium,nan,nan,nan
+36,21,34,no_equilibrium,nan,nan,nan
+40,24,36,no_equilibrium,nan,nan,nan
+45,28,37,no_equilibrium,nan,nan,nan

@@ -1,0 +1,4 @@
+  case  n_states  lambda_min_B     b_max  S_gamma_bound  psi_bound  max_dtheta_ddelta  max_dpsi_ddelta  max_fd_error  ratio_theta  ratio_psi
+ case9       400      2.250032 10.000000       5.131928   6.131928           1.732765         0.464642  1.584538e-07     0.337644   0.075774
+case39       400      4.302325 36.666667       9.840962  10.840962           2.025707         0.725712  1.114902e-07     0.205844   0.066942
+bounds hold on all sampled states

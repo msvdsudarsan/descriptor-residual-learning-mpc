@@ -1,0 +1,10 @@
+quantity,value
+load_scale,2.25
+train_traj,30
+residual_rms_true_test,10.065904
+residual_rms_error_after_fit,0.055324936
+error_reduction_percent,99.450373
+max_abs_error_test,3.4639986
+rho_pointwise_95_measured,0.16092797
+active_terms_total,107
+terms_available,130

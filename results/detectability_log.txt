@@ -1,0 +1,14 @@
+case9 1.01 kappa0 1.078 kappa_fd 1.028 s 0.0097 lin 0.0108 q 0.41 rho_GN 1.0094 resid_at_true 0.0010
+case9 1.02 kappa0 1.078 kappa_fd 1.028 s 0.0200 lin 0.0216 q 0.84 rho_GN 1.0194 resid_at_true 0.0009
+case9 1.03 kappa0 1.078 kappa_fd 1.028 s 0.0303 lin 0.0323 q 1.27 rho_GN 1.0295 resid_at_true 0.0008
+case9 1.05 kappa0 1.078 kappa_fd 1.028 s 0.0510 lin 0.0539 q 2.14 rho_GN 1.0496 resid_at_true 0.0007
+case9 1.1 kappa0 1.078 kappa_fd 1.028 s 0.1027 lin 0.1078 q 4.31 rho_GN 1.0999 resid_at_true 0.0004
+case9 1.25 kappa0 1.078 kappa_fd 1.028 s 0.2582 lin 0.2695 q 10.85 rho_GN 1.2511 resid_at_true 0.0007
+case9 smallest step with s > q0 (one-step, linear): 0.0221
+case39 1.01 kappa0 2.499 kappa_fd 2.407 s 0.0249 lin 0.0250 q 0.67 rho_GN 1.0103 resid_at_true 0.0013
+case39 1.02 kappa0 2.499 kappa_fd 2.407 s 0.0491 lin 0.0500 q 1.32 rho_GN 1.0204 resid_at_true 0.0013
+case39 1.03 kappa0 2.499 kappa_fd 2.407 s 0.0732 lin 0.0750 q 1.97 rho_GN 1.0304 resid_at_true 0.0013
+case39 1.05 kappa0 2.499 kappa_fd 2.407 s 0.1216 lin 0.1249 q 3.28 rho_GN 1.0505 resid_at_true 0.0014
+case39 1.1 kappa0 2.499 kappa_fd 2.407 s 0.2425 lin 0.2499 q 6.54 rho_GN 1.1008 resid_at_true 0.0019
+case39 1.25 kappa0 2.499 kappa_fd 2.407 s 0.6059 lin 0.6247 q 16.33 rho_GN 1.2517 resid_at_true 0.0038
+case39 smallest step with s > q0 (one-step, linear): 0.0148
