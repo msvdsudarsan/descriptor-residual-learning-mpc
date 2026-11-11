@@ -1,6 +1,6 @@
 # Physics-informed residual learning of descriptor power-network models with enforced algebraic constraints: prediction, contingency margins and a control test
 
-Code, data and results for the manuscript prepared for *Electric Power Systems Research* (Elsevier), release 2.0.0, October 2026 (contingency extension added November 2026). The DOI of this release is assigned by Zenodo when the release is published and is not yet known.
+Code, data and results for the manuscript prepared for *Electric Power Systems Research* (Elsevier), release 2.0.0, October 2026 (contingency extension added November 2026). Archived on Zenodo, DOI: https://doi.org/10.5281/zenodo.24142079.
 
 ## Contents
 | Folder | Content |
@@ -31,7 +31,7 @@ All verification described here was run by the author; independent reproduction 
 
 Status of the evidence (kept separate; all author-run, none independent): (1) `bash run_checks.sh --quick`: run, passed; (2) `bash run_checks.sh --full`: exit 0 in 616 s on a fresh copy, 2,355 contingency values with 0 mismatches, and all 105 direct-calibration score vectors regenerated and equal to the stored ones; (3) `bash run_all.sh`: exit 0 on the same copy, 690 manuscript values with 0 differences and 47 calibration values with 0 differences (34 timing values differ with machine load and are not compared); (4) `pytest`: 33 passed. Logs: `results/final_checks/verification_final/`. The earlier records in `results/final_checks/verification_earlier/` (31 tests) are kept as historical and are superseded by these. The projection ablation described at the end of this file was run once, after these checks, and lies outside them. No clean-machine or independent reproduction is claimed.
 
-Details of the quick run: the quick run passed (exit 0, 28 tests, all value checks, 0 mismatches in the case9 rerun). `bash run_checks.sh --full` and `run_all.sh` were rerun end to end on this archive (before the projection-ablation script was added; see above); the full-run record of the earlier package (`RUN_RECORD.md`, sections A-F) is historical evidence and is kept separate. The Zenodo version DOI of release 2.0.0 is PENDING and is not the DOI of release 1.0.0.
+Details of the quick run: the quick run passed (exit 0, 28 tests, all value checks, 0 mismatches in the case9 rerun). `bash run_checks.sh --full` and `run_all.sh` were rerun end to end on this archive (before the projection-ablation script was added; see above); the full-run record of the earlier package (`RUN_RECORD.md`, sections A-F) is historical evidence and is kept separate. The Zenodo DOI of release 2.0.0 is 10.5281/zenodo.24142079 (it is not the DOI of release 1.0.0).
 
 ## Model summary
 * Scalar benchmark: one angle/frequency pair and one algebraic voltage-like variable; the physics model has wrong gains and omits the cubic term.
@@ -42,7 +42,7 @@ Details of the quick run: the quick run passed (exit 0, 28 tests, all value chec
 Reduced models, no electromagnetic-transient validation; the residual transfers across loadings when loading and dispatch are known but not under an unannounced dispatch shift; the residual models are thresholded, not sparse, on the networks; the envelope is an empirical margin and not a guarantee; a network-constraint gain from the penalty tightening was not demonstrated in the tested scenarios (on case9 the tightened limit stays above the trajectory peak, on case39 the reason why A3 and A2 give identical inputs was not established); with finite-difference gradients the case39 controller is slower than the sampling period; the analytic gradient (A2, A3) brings it below on the machine used, and A0 and A1 still use finite differences; the trust gate and the reconciliation are heuristics without a guarantee.
 
 ## Citing
-See `CITATION.cff` and `DEPOSIT_TO_ZENODO.md`. Until the Zenodo release is published, the DOI field is a placeholder. MIT License for the code (`LICENSE`); the MATPOWER files keep their own BSD-3-Clause license.
+See `CITATION.cff` and `DEPOSIT_TO_ZENODO.md`. MIT License for the code (`LICENSE`); the MATPOWER files keep their own BSD-3-Clause license.
 
 ## Scientific scope
 
@@ -67,7 +67,6 @@ This repository reproduces the numerical evidence for structure-preserving resid
 1. Trust gate: the trust weight now scales the clipped residual, d_eff = tau * clip(d), as stated in the manuscript. Before, the coefficients were scaled and the original clip limit was restored (`network_reconcile.py`, `network_validity_gate.py`). Rerunning every gate, reconciliation, atlas and recovery script gave no change in any reported number.
 2. Error margin: the network margin is the largest componentwise error over all line angles and all rotor-to-bus angles. Before, it was the difference between the largest predicted and the largest true line angle (`network_experiments.py`). The margins grow (case9 elevated loading, step 5: 0.0150 to 0.023 rad; case39: 0.0157 to 0.0463 rad at step 5). Three manuscript values change: envelope 3.1 to 3.6 degrees, A3 time above the limit 3.6 to 3.8 percent, A3 violation 0.70 to 0.75. The closed-loop controller comparison does not change (a constraint gain from tightening was not demonstrated).
 3. `tests/test_audit_fixes.py` tests both points. `tools/update_envelope_tables.py` rewrites the supplement envelope tables from the CSV files.
-The Zenodo DOI of release 2.0.0 is not yet assigned (pending).
 4. `tests/test_props_independent.py` checks Propositions 2 and 3 with separately written formulas (random states inside the 30 degree region); no violation, and the Lipschitz constant is conservative by a factor of about 13 to 16. `tools/closed_loop_intervals.py` writes paired bootstrap intervals of the closed-loop speed change to `results/closed_loop_intervals.csv`.
 5. Calibration with independent trajectories. `code/network_conformal_independent.py` draws disjoint calibration sets of fresh static-law trajectories (case9: 400 sets of 20, case39: 160) and one fresh test pool (2000 and 1000) with seeds 40000 (pilot), 50000+i (calibration), 60000 (test), 70000 (shifted pool); coverage of the trajectory-level split-conformal envelope equals the guaranteed level for n of at least 20 and is about 10/11 for n=10; under a doubled load fluctuation it is 0.15 to 0.20. The earlier version of this check resampled one finite pool and was removed.
 6. Policy-matched recalibration. `code/network_cl_recalibration.py` recalibrates the closed-loop envelope with controller A2, the generator of the closed-loop study and disjoint seeds (pilot 80000, calibration 81000+i, test 82000; the evaluation realizations use 6001). Result: the 7-trajectory envelope was conservative, the new envelope has the guaranteed marginal coverage, and controller A3 with it is identical to A2.

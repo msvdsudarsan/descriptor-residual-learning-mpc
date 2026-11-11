@@ -11,5 +11,8 @@ version: "2.0.0"
 date-released: "2026-10-26"
 license: MIT
 repository-code: "https://github.com/msvdsudarsan/descriptor-residual-learning-mpc"
-# Version DOI of release 2.0.0: PENDING (added here after Zenodo has assigned it; do not reuse the DOI of release 1.0.0).
-# Add the identifiers block with the verified version DOI after Zenodo has assigned it.
+doi: "10.5281/zenodo.24142079"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.24142079"
+    description: "Zenodo archive of release 2.0.0"
