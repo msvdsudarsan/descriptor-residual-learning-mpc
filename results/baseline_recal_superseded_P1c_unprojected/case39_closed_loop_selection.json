@@ -1,0 +1,70 @@
+{
+ "validation_weak_form_rmse_P1c": 0.12175934736202451,
+ "A0": 10.053902910774234,
+ "P1a": 0.16909182940016163,
+ "P1b": 0.1686694710106406,
+ "P1c_status": [
+  3,
+  2,
+  2,
+  4,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2
+ ],
+ "P1c_at_bound": [
+  [
+   false,
+   false,
+   false
+  ],
+  [
+   false,
+   false,
+   false
+  ],
+  [
+   false,
+   false,
+   false
+  ],
+  [
+   false,
+   false,
+   false
+  ],
+  [
+   false,
+   false,
+   false
+  ],
+  [
+   false,
+   false,
+   false
+  ],
+  [
+   false,
+   false,
+   false
+  ],
+  [
+   false,
+   false,
+   false
+  ],
+  [
+   false,
+   false,
+   false
+  ],
+  [
+   false,
+   false,
+   false
+  ]
+ ]
+}
