@@ -1,0 +1,14 @@
+quantity,value
+buses,9
+generators,3
+equilibrium_residual,1.110223e-15
+lambda_min_J_nominal,2.2373965
+cond_J_nominal,25.594647
+max_line_angle_deg_nominal,7.8348934
+largest_continued_load_scale,4.5
+lambda_min_Lb_plus_G,2.2500325
+cert_lower_bound_at_30deg,1.9485853
+slowest_damping_ratio,0.28457311
+max_real_part_nonneutral,-2.6
+lowest_mode_freq_hz,1.3610833
+highest_mode_freq_hz,1.3939964

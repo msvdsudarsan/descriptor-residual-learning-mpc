@@ -1,0 +1,10 @@
+scenario,correction,rmse_ratio_to_A0
+in-family,library residual (paper),0.19259726
+in-family,damping + constant,0.20104944
+in-family,damping + cubic speed + constant,0.19769404
+saliency x1.5,library residual (paper),0.33882107
+saliency x1.5,damping + constant,0.35941798
+saliency x1.5,damping + cubic speed + constant,0.35639201
+load lag 1.0 s,library residual (paper),0.10964978
+load lag 1.0 s,damping + constant,0.11359279
+load lag 1.0 s,damping + cubic speed + constant,0.110487

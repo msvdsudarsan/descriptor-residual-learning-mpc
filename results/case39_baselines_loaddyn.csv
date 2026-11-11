@@ -1,0 +1,21 @@
+scenario,method,rmse_1s,ratio_to_A0,min_run_ratio,max_run_ratio
+in-family,P0 (physics; projected),0.89773818,1.0036583,0.98823145,1.0169804
+in-family,OURS (sparse; weak form),0.17457617,0.19517362,0.011586409,0.27706416
+in-family,SF (sparse; strong form),0.15750303,0.1760861,0.011271903,0.2495078
+in-family,RIDGE (dense; weak form),0.17464269,0.195248,0.011533989,0.27718438
+in-family,MLP (2x32; weak form),0.17705901,0.19794941,0.011443975,0.28094591
+load-lag tau=0.5,P0 (physics; projected),0.88111331,1.0045298,0.99245957,1.0153277
+load-lag tau=0.5,OURS (sparse; weak form),0.10611827,0.12098212,0.0069448071,0.17916872
+load-lag tau=0.5,SF (sparse; strong form),0.09058601,0.10327428,0.0072859909,0.15362007
+load-lag tau=0.5,RIDGE (dense; weak form),0.10615743,0.12102677,0.0068496708,0.17924512
+load-lag tau=0.5,MLP (2x32; weak form),0.10848153,0.1236764,0.0065897758,0.1827731
+load-lag tau=1.0,P0 (physics; projected),0.88178316,1.0102862,0.99901587,1.0177457
+load-lag tau=1.0,OURS (sparse; weak form),0.11128432,0.12750188,0.0075446239,0.18275331
+load-lag tau=1.0,SF (sparse; strong form),0.093706436,0.10736235,0.0076799126,0.15512394
+load-lag tau=1.0,RIDGE (dense; weak form),0.11132849,0.12755249,0.0074494874,0.18283676
+load-lag tau=1.0,MLP (2x32; weak form),0.1138867,0.13048351,0.0071796921,0.18653961
+saliency x1.5,P0 (physics; projected),1.3579283,1.002242,0.99208073,1.0109919
+saliency x1.5,OURS (sparse; weak form),0.47498334,0.35056949,0.32293276,0.3781145
+saliency x1.5,SF (sparse; strong form),0.44761773,0.33037184,0.30520945,0.35522536
+saliency x1.5,RIDGE (dense; weak form),0.47531415,0.35081364,0.32322006,0.37834276
+saliency x1.5,MLP (2x32; weak form),0.47341052,0.34940864,0.32313402,0.37613745

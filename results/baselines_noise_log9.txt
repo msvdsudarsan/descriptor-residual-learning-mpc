@@ -1,0 +1,14 @@
+code/network_benchmark.py:179: NumbaPerformanceWarning: [1m[1m[1m'@' is faster on contiguous arrays, called on (Array(float64, 2, 'A', False, aligned=True), Array(float64, 1, 'C', False, aligned=True))[0m[0m[0m
+  th2 = tangent_theta(theta, Jinv, delta, d2, gbus, bg) if mode == 0 else solve_theta(theta, d2, Pd, lf, lt, lb, gbus, bg, 1e-10, 12)[0]
+case9 (0.001, 'OURS (sparse; weak form)', 0.14337035735734263, 24)
+case9 (0.001, 'SF (sparse; strong form)', 0.1315963089228527, 29)
+case9 (0.001, 'RIDGE (dense; weak form)', 0.14371570403927855, 39)
+case9 (0.001, 'MLP (2x32; weak form)', 0.1425214108425832, -1)
+case9 (0.01, 'OURS (sparse; weak form)', 0.1475580809371028, 17)
+case9 (0.01, 'SF (sparse; strong form)', 0.13671458415258333, 15)
+case9 (0.01, 'RIDGE (dense; weak form)', 0.14624836671957286, 39)
+case9 (0.01, 'MLP (2x32; weak form)', 0.12847103897743048, -1)
+case9 (0.03, 'OURS (sparse; weak form)', 0.15766557311319282, 9)
+case9 (0.03, 'SF (sparse; strong form)', 0.13548763146417256, 24)
+case9 (0.03, 'RIDGE (dense; weak form)', 0.14817477593390185, 39)
+case9 (0.03, 'MLP (2x32; weak form)', 0.14466933369389992, -1)
