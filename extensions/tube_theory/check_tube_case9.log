@@ -1,0 +1,22 @@
+case9 stress=False load_scale=1.0 gbar=45.0 deg   ng=3
+rho_cal(max over calibration states)=0.1806 rad/s^2 ; test-state max=0.1375  (assumption rho >= test max: HOLDS)
+observed max |omega| = 1.173 rad/s ; observed max constrained angle = 11.55 deg
+constants: c0=0.707 lam2(K1)=3.865 d=1.500 theta_bar=2.784 Lam(load->angle per unit lambda)=0.3996 rad  Wl=12.94 (l1 13.7, J 12.9) sqrtM=0.417 Mmin=0.05305
+residual Lipschitz: a_psi= [29.343 24.888 25.309]  a_om= [1.672 1.7   1.674]  Dphys/M= [3.2 3.2 3.2]
+Omega_bar (hypothesis: plant and predicted speed span <= Omega_bar) = 1.5
+windows 130; windows where the hypotheses (speed span <= Omega_bar, angle level + span(e) <= gbar) hold on the observed trajectories: 130
+self-consistent (bootstrapped) Omega bound finite? median final-step span bound with bootstrap = 919613.4435365642
+violations among assumption-satisfying windows:  span_obs > span_bnd: 0 ; ang_obs > ang_bnd: 0  (of 1300 samples)
+violations over ALL windows:  span 0 ; angle 0
+ j | t[s] | med obs span | med span bound | ratio(max obs vs bound) | med obs ang | max obs ang | ang bound (med) | bound/maxobs | conformal envelope (paper)
+ 1 | 0.1 | 6.164e-05 | 6.609e-02 |    98.1 | 9.208e-04 | 4.857e-03 | 8.528e-02 |    17.6 | 3.909e-03
+ 2 | 0.2 | 3.854e-04 | 2.061e-01 |    68.8 | 1.792e-03 | 9.011e-03 | 2.445e-01 |    27.1 | 7.181e-03
+ 3 | 0.3 | 9.265e-04 | 4.368e-01 |    71.0 | 2.637e-03 | 1.240e-02 | 4.943e-01 |    39.9 | 9.350e-03
+ 4 | 0.4 | 1.573e-03 | 7.393e-01 |    89.1 | 3.317e-03 | 1.476e-02 | 8.033e-01 |    54.4 | 1.102e-02
+ 5 | 0.5 | 2.233e-03 | 1.110e+00 |   107.5 | 3.809e-03 | 1.644e-02 | 1.174e+00 |    71.4 | 1.164e-02
+ 6 | 0.6 | 2.612e-03 | 1.566e+00 |   133.7 | 4.611e-03 | 1.760e-02 | 1.629e+00 |    92.6 | -
+ 7 | 0.7 | 3.026e-03 | 2.124e+00 |   170.3 | 4.857e-03 | 1.746e-02 | 2.188e+00 |   125.3 | -
+ 8 | 0.8 | 3.208e-03 | 2.808e+00 |   227.5 | 5.155e-03 | 1.665e-02 | 2.872e+00 |   172.5 | -
+ 9 | 0.9 | 3.283e-03 | 3.648e+00 |   318.6 | 5.200e-03 | 1.742e-02 | 3.712e+00 |   213.1 | -
+10 | 1.0 | 3.319e-03 | 4.678e+00 |   421.9 | 4.841e-03 | 1.796e-02 | 4.742e+00 |   264.0 | -
+component split at j=5: pot-route span 1.110e+00, velocity-route span 2.597e+00, load-angle term 6.394e-02

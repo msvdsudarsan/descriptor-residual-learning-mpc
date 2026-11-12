@@ -1,0 +1,13 @@
+case39 ideal=True rho_sup=0  windows=130   (all numbers at t=0.5 s, medians over windows, ratio to the window actual span error)
+ingredient ladder (cumulative replacement)                                                            median span      x obs  step factor
+B0 full bound                                                                                               1.791      110.5          nan
+B1 + load -> window-actual running max |lambda|                                                            0.5324       31.3         0.28
+B2 + rho -> window-actual running max |w_s|                                                                0.5324       31.3         1.00
+B3 + forcing norm -> actual running max ||M^-1/2 F|| (removes Cauchy-Schwarz/uniform Wl)                   0.3663       21.6         0.69
+B4 + Omega_bar -> window-actual speed span                                                                 0.3288       19.6         0.91
+B5 + residual-Lipschitz perturbation theta_bar -> 0, d=Dphys/M                                             0.3288       19.6         1.00
+B6 energy->span conversion only: span_pot(V_act)                                                           0.2418       14.9          nan
+median observed span 0.0162, median observed angle error 0.0148, median actual forcing norm 2.58 vs worst-case W 11.8, median actual energy V 0.0768
+actual |lambda| at 0.5 s median 0.0508 vs worst-case bound 0.1600 ; actual max|w_s| median 0 vs rho 0
+conversion split at 0.5 s (medians): sqrt(2V/s^2)=7.28 (kinetic+COI energy counted as potential), sqrt(s^2/(c0*lam2*|e_perp|^2))=1.64 (weakest-mode assumption), sqrt2|e_perp|/span=1.25
+kinetic share of V_act: median 0.98
