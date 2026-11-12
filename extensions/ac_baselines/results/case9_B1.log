@@ -1,0 +1,33 @@
+case9 B1 linear map features 5 alpha 1e-10 val rmse theta (rad) 0.0007081553264490536
+case9 B1 quadratic map features 14 alpha 1e-06 val rmse theta (rad) 0.0006979798501797431
+code/network_benchmark.py:179: NumbaPerformanceWarning: [1m[1m[1m'@' is faster on contiguous arrays, called on (Array(float64, 2, 'A', False, aligned=True), Array(float64, 1, 'C', False, aligned=True))[0m[0m[0m
+  th2 = tangent_theta(theta, Jinv, delta, d2, gbus, bg) if mode == 0 else solve_theta(theta, d2, Pd, lf, lt, lb, gbus, bg, 1e-10, 12)[0]
+case9 in-family (ic 0.10) A0 rmse_1s 0.7068 (ratio to A0 1.000)  ang_rms_1s 0.00903 ang_max_1s 0.01617  g_mean 1.20e-03 g_max 4.89e-02
+case9 in-family (ic 0.10) A1 rmse_1s 0.1479 (ratio to A0 0.209)  ang_rms_1s 0.00421 ang_max_1s 0.00982  g_mean 1.19e-03 g_max 4.89e-02
+case9 in-family (ic 0.10) A2 rmse_1s 0.1509 (ratio to A0 0.213)  ang_rms_1s 0.00430 ang_max_1s 0.00982  g_mean 5.01e-11 g_max 9.80e-11
+case9 in-family (ic 0.10) B1 linear map rmse_1s 0.1504 (ratio to A0 0.213)  ang_rms_1s 0.00429 ang_max_1s 0.00980  g_mean 3.67e-04 g_max 1.55e-03
+case9 in-family (ic 0.10) B1 linear map anchored rmse_1s 0.1480 (ratio to A0 0.209)  ang_rms_1s 0.00421 ang_max_1s 0.00982  g_mean 1.22e-03 g_max 4.91e-02
+case9 in-family (ic 0.10) B1 quadratic map rmse_1s 0.1511 (ratio to A0 0.214)  ang_rms_1s 0.00431 ang_max_1s 0.00983  g_mean 3.03e-04 g_max 2.44e-03
+case9 in-family (ic 0.10) B1 quadratic map anchored rmse_1s 0.1479 (ratio to A0 0.209)  ang_rms_1s 0.00421 ang_max_1s 0.00982  g_mean 1.23e-03 g_max 4.74e-02
+case9 wide initial state (ic 0.25) A0 rmse_1s 0.6988 (ratio to A0 1.000)  ang_rms_1s 0.00761 ang_max_1s 0.01216  g_mean 1.13e-03 g_max 4.78e-02
+case9 wide initial state (ic 0.25) A1 rmse_1s 0.1090 (ratio to A0 0.156)  ang_rms_1s 0.00263 ang_max_1s 0.00599  g_mean 1.12e-03 g_max 4.78e-02
+case9 wide initial state (ic 0.25) A2 rmse_1s 0.1111 (ratio to A0 0.159)  ang_rms_1s 0.00264 ang_max_1s 0.00599  g_mean 5.19e-11 g_max 9.94e-11
+case9 wide initial state (ic 0.25) B1 linear map rmse_1s 0.1106 (ratio to A0 0.158)  ang_rms_1s 0.00263 ang_max_1s 0.00596  g_mean 4.87e-04 g_max 8.25e-03
+case9 wide initial state (ic 0.25) B1 linear map anchored rmse_1s 0.1090 (ratio to A0 0.156)  ang_rms_1s 0.00264 ang_max_1s 0.00599  g_mean 1.32e-03 g_max 4.77e-02
+case9 wide initial state (ic 0.25) B1 quadratic map rmse_1s 0.1112 (ratio to A0 0.159)  ang_rms_1s 0.00265 ang_max_1s 0.00599  g_mean 4.08e-04 g_max 1.04e-02
+case9 wide initial state (ic 0.25) B1 quadratic map anchored rmse_1s 0.1090 (ratio to A0 0.156)  ang_rms_1s 0.00264 ang_max_1s 0.00600  g_mean 1.40e-03 g_max 5.17e-02
+case9 loading x2 (mu=2) known to predictor A0 rmse_1s 1.4316 (ratio to A0 1.000)  ang_rms_1s 0.01752 ang_max_1s 0.03494  g_mean 1.38e-03 g_max 4.48e-02
+case9 loading x2 (mu=2) known to predictor A1 rmse_1s 0.3042 (ratio to A0 0.212)  ang_rms_1s 0.00902 ang_max_1s 0.02352  g_mean 1.31e-03 g_max 4.49e-02
+case9 loading x2 (mu=2) known to predictor A2 rmse_1s 0.3059 (ratio to A0 0.214)  ang_rms_1s 0.00903 ang_max_1s 0.02352  g_mean 6.37e-11 g_max 9.99e-11
+case9 loading x2 (mu=2) known to predictor B1 linear map rmse_1s 0.3069 (ratio to A0 0.214)  ang_rms_1s 0.00926 ang_max_1s 0.02515  g_mean 2.34e-02 g_max 3.04e-02
+case9 loading x2 (mu=2) known to predictor B1 linear map anchored rmse_1s 0.3041 (ratio to A0 0.212)  ang_rms_1s 0.00901 ang_max_1s 0.02349  g_mean 1.52e-03 g_max 4.25e-02
+case9 loading x2 (mu=2) known to predictor B1 quadratic map rmse_1s 0.3184 (ratio to A0 0.222)  ang_rms_1s 0.00972 ang_max_1s 0.02629  g_mean 3.64e-02 g_max 7.99e-02
+case9 loading x2 (mu=2) known to predictor B1 quadratic map anchored rmse_1s 0.3079 (ratio to A0 0.215)  ang_rms_1s 0.00914 ang_max_1s 0.02278  g_mean 5.31e-03 g_max 1.12e-01
+case9 line outage known to predictor A0 rmse_1s 0.6915 (ratio to A0 1.000)  ang_rms_1s 0.01693 ang_max_1s 0.04280  g_mean 7.63e-04 g_max 3.37e-02
+case9 line outage known to predictor A1 rmse_1s 0.0900 (ratio to A0 0.130)  ang_rms_1s 0.00910 ang_max_1s 0.02731  g_mean 7.50e-04 g_max 3.37e-02
+case9 line outage known to predictor A2 rmse_1s 0.0919 (ratio to A0 0.133)  ang_rms_1s 0.00922 ang_max_1s 0.02731  g_mean 3.92e-11 g_max 9.90e-11
+case9 line outage known to predictor B1 linear map rmse_1s 0.1634 (ratio to A0 0.236)  ang_rms_1s 0.34577 ang_max_1s 0.45388  g_mean 8.32e-01 g_max 1.16e+00
+case9 line outage known to predictor B1 linear map anchored rmse_1s 0.0899 (ratio to A0 0.130)  ang_rms_1s 0.01262 ang_max_1s 0.06116  g_mean 8.28e-03 g_max 1.33e-01
+case9 line outage known to predictor B1 quadratic map rmse_1s 0.1636 (ratio to A0 0.237)  ang_rms_1s 0.34577 ang_max_1s 0.45388  g_mean 8.32e-01 g_max 1.16e+00
+case9 line outage known to predictor B1 quadratic map anchored rmse_1s 0.0900 (ratio to A0 0.130)  ang_rms_1s 0.01262 ang_max_1s 0.06105  g_mean 8.29e-03 g_max 1.34e-01
+time 31.663935661315918
