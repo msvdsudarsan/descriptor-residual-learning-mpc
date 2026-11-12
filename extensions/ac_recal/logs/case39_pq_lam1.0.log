@@ -1,0 +1,3 @@
+extensions/ac_baselines/ac_model.py:249: NumbaPerformanceWarning: [1m[1m[1m'@' is faster on contiguous arrays, called on (Array(float64, 2, 'A', False, aligned=True), Array(float64, 1, 'C', False, aligned=True))[0m[0m[0m
+  z2 = tangent_z(z, Jinv, delta, d2, net) if mode == 0 else solve_z(z, d2, fac, net, 1e-10, 15)[0]
+case39_pq_lam1.0 OK  50
