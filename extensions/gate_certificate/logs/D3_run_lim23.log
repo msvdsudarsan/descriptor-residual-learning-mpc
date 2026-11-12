@@ -1,8 +1,0 @@
-eps_prod (rad) [0.         0.01430039 0.02696397 0.03719241 0.04678291 0.05682734]  deg [0.         0.81935205 1.54492179 2.13096801 2.68046318 3.25596674]
-limit 23 lambda 0 n 400: frac>0 210, frac>0.05 154, mean peak 23.020, mean w_rms 0.8951, argmax-peak sample mean 19.1, initial angle mean 21.957 deg; 145.9 s
-limit 23 lambda 0.5 n 400: frac>0 210, frac>0.05 154, mean peak 23.020, mean w_rms 0.8951, argmax-peak sample mean 19.1, initial angle mean 21.957 deg; 123.2 s
-limit 23 lambda 1 n 400: frac>0 211, frac>0.05 158, mean peak 23.019, mean w_rms 0.8953, argmax-peak sample mean 19.1, initial angle mean 21.957 deg; 127.4 s
-eps_prod (rad) [0.         0.01430039 0.02696397 0.03719241 0.04678291 0.05682734]  deg [0.         0.81935205 1.54492179 2.13096801 2.68046318 3.25596674]
-limit 23 lambda 1.5 n 400: frac>0 205, frac>0.05 148, mean peak 23.014, mean w_rms 0.8963, argmax-peak sample mean 19.8, initial angle mean 21.957 deg; 157.5 s
-limit 23 lambda 2 n 400: frac>0 209, frac>0.05 146, mean peak 23.017, mean w_rms 0.8979, argmax-peak sample mean 19.9, initial angle mean 21.957 deg; 135.0 s
-limit 23 lambda 3 n 400: frac>0 212, frac>0.05 154, mean peak 23.033, mean w_rms 0.9012, argmax-peak sample mean 21.4, initial angle mean 21.957 deg; 126.3 s
