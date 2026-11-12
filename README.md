@@ -1,6 +1,6 @@
 # Physics-informed residual learning of descriptor power-network models with enforced algebraic constraints: prediction, contingency margins and a control test
 
-Code, data and results for the manuscript prepared for *Electric Power Systems Research* (Elsevier), release 2.1.0, November 2026. This release adds the recalibrated-physics comparison in the voltage-magnitude variant (`extensions/ac_recal/`) and the exploratory contingency diagnostics (`extensions/contingency_mechanism/`). The previous release 2.0.0 is archived on Zenodo, DOI: https://doi.org/10.5281/zenodo.24142079; it remains available and does not contain these two folders.
+Code, data and results for the manuscript prepared for *Electric Power Systems Research* (Elsevier), release 2.1.0, November 2026. This release adds the recalibrated-physics comparison in the voltage-magnitude variant (`extensions/ac_recal/`) and the exploratory contingency diagnostics (`extensions/contingency_mechanism/`). This release is archived on Zenodo, DOI: https://doi.org/10.5281/zenodo.24167124. The previous release 2.0.0 is archived on Zenodo, DOI: https://doi.org/10.5281/zenodo.24142079; it remains available and does not contain these two folders.
 
 ## Contents
 | Folder | Content |
