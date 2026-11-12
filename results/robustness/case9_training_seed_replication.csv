@@ -1,0 +1,26 @@
+case,train_seed,cell,n_test_runs,mean_P2_minus_P1c,ci_lo,ci_hi,verdict(margin 0.02)
+case9,2001,M0a,8,-0.0127,-0.0166,-0.0088,equivalent
+case9,2001,M1a,8,-0.0104,-0.0141,-0.0067,equivalent
+case9,2001,M1b,8,-0.0555,-0.0557,-0.0553,P2 better
+case9,2001,M2a,8,-0.006,-0.0077,-0.0042,equivalent
+case9,2001,M2b,8,-0.0104,-0.0135,-0.0073,equivalent
+case9,3001,M0a,8,-0.012,-0.0156,-0.0084,equivalent
+case9,3001,M1a,8,-0.0096,-0.0131,-0.0061,equivalent
+case9,3001,M1b,8,-0.054,-0.0542,-0.0538,P2 better
+case9,3001,M2a,8,-0.0041,-0.0054,-0.0029,equivalent
+case9,3001,M2b,8,-0.0097,-0.0126,-0.0069,equivalent
+case9,4001,M0a,8,-0.0126,-0.0165,-0.0088,equivalent
+case9,4001,M1a,8,-0.0094,-0.0128,-0.0061,equivalent
+case9,4001,M1b,8,-0.0551,-0.0554,-0.0549,P2 better
+case9,4001,M2a,8,-0.0046,-0.0061,-0.0031,equivalent
+case9,4001,M2b,8,-0.0104,-0.0134,-0.0074,equivalent
+case9,5001,M0a,8,-0.0106,-0.0137,-0.0076,equivalent
+case9,5001,M1a,8,-0.0077,-0.0105,-0.005,equivalent
+case9,5001,M1b,8,-0.05,-0.0502,-0.0499,P2 better
+case9,5001,M2a,8,-0.0033,-0.0043,-0.0023,equivalent
+case9,5001,M2b,8,-0.0083,-0.0106,-0.0059,equivalent
+case9,6001,M0a,8,-0.0107,-0.0139,-0.0075,equivalent
+case9,6001,M1a,8,-0.009,-0.0121,-0.0058,equivalent
+case9,6001,M1b,8,-0.0503,-0.0505,-0.0502,P2 better
+case9,6001,M2a,8,-0.0035,-0.0045,-0.0025,equivalent
+case9,6001,M2b,8,-0.0084,-0.0108,-0.0059,equivalent

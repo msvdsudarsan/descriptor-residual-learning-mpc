@@ -1,0 +1,16 @@
+Table 1 [mu 1.05 physics + proj.] NO SOURCE: cell '0.178 0.22 -- --' expected ['no stored source (UNVERIFIED rows)']
+Table 1 [mu 1.1 physics + proj.] NO SOURCE: cell '0.114 0.17 -- --' expected ['no stored source (UNVERIFIED rows)']
+Table 53 [half l1 rotor-to-bus angles] NO SOURCE: cell '$0.22$ / $0.32$ | $0.30$ / $0.58$' expected ['no stored source for the rotor-to-bus values 0.32 / 0.58']
+
+table: pass / mismatch / no-source cells
+  1: 48 / 0 / 2
+  43: 12 / 0 / 0
+  44: 12 / 0 / 0
+  51: 40 / 0 / 0
+  52: 21 / 0 / 0
+  53: 4 / 0 / 1
+  54: 9 / 0 / 0
+  55: 18 / 0 / 0
+  56: 12 / 0 / 0
+  58: 12 / 0 / 0
+  71: 20 / 0 / 0

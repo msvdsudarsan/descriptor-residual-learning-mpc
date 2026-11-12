@@ -1,0 +1,21 @@
+== 1. unit tests
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+31 passed, 1 warning in 23.97s
+== 2. regenerate tables / CSV / values_contingency.json from raw JSON
+wrote extensions/contingency/results/summary_per_contingency.csv extensions/contingency/results/summary_by_set.csv extensions/contingency/results/tables_by_set.tex paper/values_contingency.json
+== 3. value checks
+(1) 60 aggregated entries compared with paper/values_contingency.json
+(2) 198 log lines compared with the raw JSON
+(3) 20 manuscript values compared
+(5) missed-failure lists compared (case39 full: lines 8,10,11 original; 8,10 replication; 14,17 mismatch)
+(4) calibration seed 5001 and training seeds 1001/1002 are disjoint from 720 test seeds; no test trajectory shares initial conditions with a calibration trajectory
+ALL CHECKS PASSED
+== 4. rerun case9 full outages (original seeds) -> /tmp/tmp.SS0WoArXb9
+compared 90 numbers; mismatches 0
+RUN_CHECKS COMPLETED OK (mode=--quick) in 42 s
+
+real	0m42.279s
+user	0m40.619s
+sys	0m0.729s
+exit=0
