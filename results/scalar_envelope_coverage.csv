@@ -1,0 +1,3 @@
+test_source,n_traj,cover_delta_k6,cover_omega_k6,cover_delta_k12,cover_omega_k12,cover_joint_all_k
+static law,16,1,1,0.875,0.875,0.875
+MPC (A2),16,1,1,1,1,1

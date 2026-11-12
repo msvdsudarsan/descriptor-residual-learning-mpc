@@ -1,0 +1,16 @@
+quantity,value
+A0,0.991768
+A2,1.89305
+oracle,0.45286
+gate,1.01147
+rec,0.478512
+rho,1.25137
+delay,0.1
+retrust,0.5
+rec_over_A0,0.482484
+rec_over_A2,0.252773
+share_of_oracle_gain,0.982188
+ms_exact,12.0167
+ms_fd,312.607
+ms_A0,135.714
+budget_share,0.120167
