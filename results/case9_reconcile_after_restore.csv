@@ -1,0 +1,3 @@
+scenario,rmse_A0,rmse_A2,rmse_oracle,rmse_gate,rmse_reconcile
+recovery mu 1.1,0.50927479,0.09754365,0.09754365,0.09754365,0.09718075
+recovery mu 1.25,0.5238538,0.1359175,0.1359175,0.1359175,0.14018566
