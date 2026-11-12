@@ -1,3 +1,0 @@
-case39 authority 6.0 run 0 {'C0': 0.8254, 'A0': 0.3326, 'A2': 0.1398, 'rec': 0.039, 'oracle': 0.0358}
-case39 authority 6.0 run 1 {'C0': 0.7716, 'A0': 0.3364, 'A2': 0.134, 'rec': 0.0384, 'oracle': 0.0409}
-case39 authority 6.0 run 2 {'C0': 0.7339, 'A0': 0.3283, 'A2': 0.137, 'rec': 0.0294, 'oracle': 0.026}

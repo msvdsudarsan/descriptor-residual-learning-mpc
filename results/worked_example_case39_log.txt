@@ -1,8 +1,0 @@
-1  case39: n=39 buses, 10 generators at buses [30, 31, 32, 33, 34, 35, 36, 37, 38, 39]; sum Pm = sum Pd = 62.5423 pu
-   equilibrium residual 6.2e-15; rotor angles psi_i [deg] = [4.11, 18.22, 15.49, 16.79, 17.33, 16.37, 16.72, 16.57, 16.61, 15.71]
-2  lambda_min(J)=4.186, bound cos(30deg)*lambda_min(B)=3.726, so ||J^-1||_2=0.239 <= 0.268; largest line angle 9.6 deg, rotor 18.2 deg
-3  weak-form equation (generator 1, sample 12): target -1.1656, model -1.2475; over 120 samples RMS 1.463 -> 0.085; 11 active terms
-4  Newton projection after a rotor-angle change of up to 14.7 deg: max|g| = ['4.9e-02', '8.7e-06', '2.8e-13', '1.7e-14']
-5  one-second state RMSE: A0 1.057, A1 0.013, A2 0.102 (ratio A2/A0 0.10); max|g| at 1 s: 1.5e-01, 1.5e-01, 5.8e-14
-6  step at 1.0 s: q below 0.23 and tau >= 1.00 before it; first flag after 0.10 s (q=5.7, tau=0.31); lowest tau 0.02; reconciled rho = 1.254 (true 1.25), final q 0.35, tau 1.00; plain gate stays at tau 0.02
-wrote results/worked_example_case39.json
