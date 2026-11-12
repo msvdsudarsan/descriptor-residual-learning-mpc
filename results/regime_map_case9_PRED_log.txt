@@ -1,7 +1,0 @@
-code/network_benchmark.py:179: NumbaPerformanceWarning: [1m[1m[1m'@' is faster on contiguous arrays, called on (Array(float64, 2, 'A', False, aligned=True), Array(float64, 1, 'C', False, aligned=True))[0m[0m[0m
-  th2 = tangent_theta(theta, Jinv, delta, d2, gbus, bg) if mode == 0 else solve_theta(theta, d2, Pd, lf, lt, lb, gbus, bg, 1e-10, 12)[0]
-case9 M0 a pick P1c
-case9 M1 a pick P1c
-case9 M1 b pick P1c
-case9 M2 a pick P1c
-case9 M2 b pick P1c
