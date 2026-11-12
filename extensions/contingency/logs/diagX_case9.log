@@ -1,0 +1,8 @@
+code/network_benchmark.py:179: NumbaPerformanceWarning: [1m[1m[1m'@' is faster on contiguous arrays, called on (Array(float64, 2, 'A', False, aligned=True), Array(float64, 1, 'C', False, aligned=True))[0m[0m[0m
+  th2 = tangent_theta(theta, Jinv, delta, d2, gbus, bg) if mode == 0 else solve_theta(theta, d2, Pd, lf, lt, lb, gbus, bg, 1e-10, 12)[0]
+1 ident 0.0e+00 eps 0.0173 | e_model score: median 0.0090 max 0.0280 (frac<=eps 0.70) | D max 0.2093 | true score max 0.2272 | twin run 0.3 ms
+2 ident 5.6e-17 eps 0.0173 | e_model score: median 0.0299 max 0.0521 (frac<=eps 0.25) | D max 0.3417 | true score max 0.3518 | twin run 0.3 ms
+4 ident 0.0e+00 eps 0.0173 | e_model score: median 0.0104 max 0.0361 (frac<=eps 0.65) | D max 0.1852 | true score max 0.1916 | twin run 0.3 ms
+5 ident 5.6e-17 eps 0.0173 | e_model score: median 0.0161 max 0.0458 (frac<=eps 0.55) | D max 0.4810 | true score max 0.4771 | twin run 0.3 ms
+7 ident 0.0e+00 eps 0.0173 | e_model score: median 0.0223 max 0.0586 (frac<=eps 0.35) | D max 0.4955 | true score max 0.4796 | twin run 0.3 ms
+8 ident 5.6e-17 eps 0.0173 | e_model score: median 0.0127 max 0.0466 (frac<=eps 0.60) | D max 0.2906 | true score max 0.3082 | twin run 0.4 ms
