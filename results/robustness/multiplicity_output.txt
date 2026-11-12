@@ -1,0 +1,24 @@
+.:17: RuntimeWarning: divide by zero encountered in scalar divide
+  if v == 'equivalent': p = max(stats.t.sf((mu + M) / se, n - 1), stats.t.cdf((mu - M) / se, n - 1))
+comparisons 60
+equivalent     n= 42  p<0.05 unadjusted:  42   Holm<0.05:  42
+first better   n= 16  p<0.05 unadjusted:  16   Holm<0.05:  16
+INCONCLUSIVE   n=  2  p<0.05 unadjusted:   0   Holm<0.05:   0
+--- non-equivalence findings (superiority) ---
+case9 pred M1b P2-P1c first better p=8.79e-17 holm=4.22e-15
+case9 cl M0x1 P2-C0 first better p=4.11e-06 holm=9.85e-05
+case9 cl M0x1 P2-A0 first better p=1.67e-06 holm=4.17e-05
+case9 cl M0x3 P2-P1* first better p=4.45e-06 holm=0.000102
+case9 cl M0x3 P2-C0eq first better p=8.62e-09 holm=2.67e-07
+case9 cl M0x3 P2-C0 first better p=1.28e-08 holm=3.85e-07
+case9 cl M0x3 P2-A0 first better p=1.89e-10 holm=6.82e-09
+case9 cl M1x3 P2-C0 first better p=3.08e-08 holm=8.61e-07
+case9 cl M1x3 P2-A0 first better p=4.49e-07 holm=1.17e-05
+case39 cl M0x1 P2-C0 first better p=0.00062 holm=0.0062
+case39 cl M0x1 P2-A0 first better p=5.19e-05 holm=0.00083
+case39 cl M0x3 P2-C0eq first better p=0.00127 holm=0.00912
+case39 cl M0x3 P2-C0 first better p=9.31e-06 holm=0.000195
+case39 cl M0x3 P2-A0 first better p=0.00121 holm=0.00912
+case39 cl M1x3 P2-C0 first better p=1.41e-05 holm=0.000283
+case39 cl M1x3 P2-A0 first better p=0.00991 holm=0.0333
+--- equivalence verdicts that do NOT survive Holm ---

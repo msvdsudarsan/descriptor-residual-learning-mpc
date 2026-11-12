@@ -1,0 +1,72 @@
++ set -euo pipefail
+++ dirname run_all.sh
++ cd .
++ python3 tests/test_consistency.py
+ok test_scalar_baseline_is_misspecified
+ok test_scalar_global_index_one
+ok test_network_jacobian_bound
+ok test_newton_projection_consistency
+ok test_dispatch_balance
+ok test_conformal_quantile_small_n_is_max
+ok test_out_of_library_term_off_by_default
+ok test_lipschitz_chain_bound
+code/network_experiments.py:218: NumbaPerformanceWarning: [1m[1m[1m[1m'@' is faster on contiguous arrays, called on (Array(float64, 2, 'A', False, aligned=True), Array(float64, 1, 'C', False, aligned=True))[0m[0m[0m[0m
+  de, w, th = pred_step(de, w, th, u, h, Pd, mode, use_res, coef, lf, lt, lb, gbus, bg, M, Dphys, Pm, kappa, fric)
+ok test_exact_gradient_matches_central_differences
+ok test_trust_gate_separates_shift_from_no_shift
+ok test_reconciliation_recovers_dispatch_scale
++ python3 tests/test_standard_facts.py
+ok test_gronwall_attained
+ok test_conformal_coverage_exact_enumeration
+ok test_conformal_coverage_n20_simulation
++ python3 code/scalar_experiments.py
++ python3 code/network_experiments.py
+code/network_benchmark.py:179: NumbaPerformanceWarning: [1m[1m[1m'@' is faster on contiguous arrays, called on (Array(float64, 2, 'A', False, aligned=True), Array(float64, 1, 'C', False, aligned=True))[0m[0m[0m
+  th2 = tangent_theta(theta, Jinv, delta, d2, gbus, bg) if mode == 0 else solve_theta(theta, d2, Pd, lf, lt, lb, gbus, bg, 1e-10, 12)[0]
++ python3 code/network_tube_test.py
+code/network_experiments.py:238: NumbaPerformanceWarning: [1m[1m[1m[1m[1m'@' is faster on contiguous arrays, called on (Array(float64, 2, 'A', False, aligned=True), Array(float64, 1, 'C', False, aligned=True))[0m[0m[0m[0m[0m
+  J0 = mpc_cost_net(Uf, de0, w0, th0, uprev, N, Ts, nsub, mode, use_res, coef, Pd, lf, lt, lb, gbus, bg, M, Dphys, Pm, kappa, fric,
++ python3 code/network_extra_tests.py
+code/network_benchmark.py:179: NumbaPerformanceWarning: [1m[1m[1m'@' is faster on contiguous arrays, called on (Array(float64, 2, 'A', False, aligned=True), Array(float64, 1, 'C', False, aligned=True))[0m[0m[0m
+  th2 = tangent_theta(theta, Jinv, delta, d2, gbus, bg) if mode == 0 else solve_theta(theta, d2, Pd, lf, lt, lb, gbus, bg, 1e-10, 12)[0]
++ python3 code/network_transfer_test.py
+code/network_benchmark.py:179: NumbaPerformanceWarning: [1m[1m[1m'@' is faster on contiguous arrays, called on (Array(float64, 2, 'A', False, aligned=True), Array(float64, 1, 'C', False, aligned=True))[0m[0m[0m
+  th2 = tangent_theta(theta, Jinv, delta, d2, gbus, bg) if mode == 0 else solve_theta(theta, d2, Pd, lf, lt, lb, gbus, bg, 1e-10, 12)[0]
++ python3 code/network_analytic_gradient.py
+code/network_experiments.py:218: NumbaPerformanceWarning: [1m[1m[1m[1m'@' is faster on contiguous arrays, called on (Array(float64, 2, 'A', False, aligned=True), Array(float64, 1, 'C', False, aligned=True))[0m[0m[0m[0m
+  de, w, th = pred_step(de, w, th, u, h, Pd, mode, use_res, coef, lf, lt, lb, gbus, bg, M, Dphys, Pm, kappa, fric)
++ python3 code/network_baselines_loaddyn.py
+code/network_benchmark.py:179: NumbaPerformanceWarning: [1m[1m[1m'@' is faster on contiguous arrays, called on (Array(float64, 2, 'A', False, aligned=True), Array(float64, 1, 'C', False, aligned=True))[0m[0m[0m
+  th2 = tangent_theta(theta, Jinv, delta, d2, gbus, bg) if mode == 0 else solve_theta(theta, d2, Pd, lf, lt, lb, gbus, bg, 1e-10, 12)[0]
++ python3 code/network_baselines_loaddyn.py noise
+code/network_benchmark.py:179: NumbaPerformanceWarning: [1m[1m[1m'@' is faster on contiguous arrays, called on (Array(float64, 2, 'A', False, aligned=True), Array(float64, 1, 'C', False, aligned=True))[0m[0m[0m
+  th2 = tangent_theta(theta, Jinv, delta, d2, gbus, bg) if mode == 0 else solve_theta(theta, d2, Pd, lf, lt, lb, gbus, bg, 1e-10, 12)[0]
++ python3 code/make_baseline_figure.py
+\begin{tabular}{llcccc}
+\toprule
+network & scenario & sparse, weak & sparse, strong & dense ridge & MLP \\
+\midrule
+case9 & in-family & 0.143 & 0.132 & 0.144 & 0.143 \\
+case9 & load lag 0.5 s & 0.091 & 0.080 & 0.091 & 0.090 \\
+case9 & load lag 1.0 s & 0.097 & 0.084 & 0.098 & 0.096 \\
+case9 & saliency x1.5 & 0.323 & 0.308 & 0.324 & 0.322 \\
+\midrule
+case39 & in-family & 0.195 & 0.176 & 0.195 & 0.198 \\
+case39 & load lag 0.5 s & 0.121 & 0.103 & 0.121 & 0.124 \\
+case39 & load lag 1.0 s & 0.128 & 0.107 & 0.128 & 0.130 \\
+case39 & saliency x1.5 & 0.351 & 0.330 & 0.351 & 0.349 \\
+\bottomrule
+\end{tabular}
+
++ python3 code/network_validity_gate.py case9
+code/network_benchmark.py:179: NumbaPerformanceWarning: [1m[1m[1m'@' is faster on contiguous arrays, called on (Array(float64, 2, 'A', False, aligned=True), Array(float64, 1, 'C', False, aligned=True))[0m[0m[0m
+  th2 = tangent_theta(theta, Jinv, delta, d2, gbus, bg) if mode == 0 else solve_theta(theta, d2, Pd, lf, lt, lb, gbus, bg, 1e-10, 12)[0]
++ python3 code/network_validity_gate.py case39
+code/network_benchmark.py:179: NumbaPerformanceWarning: [1m[1m[1m'@' is faster on contiguous arrays, called on (Array(float64, 2, 'A', False, aligned=True), Array(float64, 1, 'C', False, aligned=True))[0m[0m[0m
+  th2 = tangent_theta(theta, Jinv, delta, d2, gbus, bg) if mode == 0 else solve_theta(theta, d2, Pd, lf, lt, lb, gbus, bg, 1e-10, 12)[0]
++ python3 code/network_reconcile.py case9
+code/network_benchmark.py:179: NumbaPerformanceWarning: [1m[1m[1m'@' is faster on contiguous arrays, called on (Array(float64, 2, 'A', False, aligned=True), Array(float64, 1, 'C', False, aligned=True))[0m[0m[0m
+  th2 = tangent_theta(theta, Jinv, delta, d2, gbus, bg) if mode == 0 else solve_theta(theta, d2, Pd, lf, lt, lb, gbus, bg, 1e-10, 12)[0]
++ python3 code/network_reconcile.py case39
+code/network_benchmark.py:179: NumbaPerformanceWarning: [1m[1m[1m'@' is faster on contiguous arrays, called on (Array(float64, 2, 'A', False, aligned=True), Array(float64, 1, 'C', False, aligned=True))[0m[0m[0m
+  th2 = tangent_theta(theta, Jinv, delta, d2, gbus, bg) if mode == 0 else solve_theta(theta, d2, Pd, lf, lt, lb, gbus, bg, 1e-10, 12)[0]
