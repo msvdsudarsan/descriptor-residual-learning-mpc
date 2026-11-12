@@ -1,0 +1,17 @@
+1 1.0 K 0.060 obs_max 0.165 | nominal 0.039/0.00 Kstatic 0.099/0.00 Kwin 0.094/0.00 twin 0.187/1.00 lin 0.039/0.00
+3 1.0 K 0.122 obs_max 0.233 | nominal 0.039/0.00 Kstatic 0.161/0.00 Kwin 0.117/0.00 twin 0.261/1.00 lin 0.039/0.00
+6 1.0 K 0.014 obs_max 0.039 | nominal 0.039/0.95 Kstatic 0.053/1.00 Kwin 0.039/0.95 twin 0.039/0.95 lin 0.039/0.95
+8 1.0 K 0.068 obs_max 0.076 | nominal 0.039/0.00 Kstatic 0.107/1.00 Kwin 0.073/0.55 twin 0.074/0.60 lin 0.038/0.00
+10 1.0 K 0.049 obs_max 0.059 | nominal 0.039/0.00 Kstatic 0.087/1.00 Kwin 0.057/0.80 twin 0.055/0.55 lin 0.039/0.00
+12 1.0 K 0.107 obs_max 0.151 | nominal 0.039/0.00 Kstatic 0.145/0.55 Kwin 0.118/0.00 twin 0.153/1.00 lin 0.038/0.00
+15 1.0 K 0.026 obs_max 0.058 | nominal 0.039/0.00 Kstatic 0.065/1.00 Kwin 0.043/0.00 twin 0.063/1.00 lin 0.038/0.00
+17 1.0 K 0.091 obs_max 0.117 | nominal 0.039/0.00 Kstatic 0.130/1.00 Kwin 0.100/0.00 twin 0.118/1.00 lin 0.038/0.00
+20 1.0 K 0.002 obs_max 0.037 | nominal 0.039/1.00 Kstatic 0.041/1.00 Kwin 0.039/1.00 twin 0.039/1.00 lin 0.039/1.00
+22 1.0 K 0.102 obs_max 0.140 | nominal 0.039/0.00 Kstatic 0.140/1.00 Kwin 0.111/0.00 twin 0.143/1.00 lin 0.038/0.00
+24 1.0 K 0.146 obs_max 0.221 | nominal 0.039/0.00 Kstatic 0.185/0.00 Kwin 0.157/0.00 twin 0.232/1.00 lin 0.040/0.00
+27 1.0 K 0.139 obs_max 0.229 | nominal 0.039/0.00 Kstatic 0.177/0.00 Kwin 0.148/0.00 twin 0.247/1.00 lin 0.041/0.00
+29 1.0 K 0.085 obs_max 0.098 | nominal 0.039/0.00 Kstatic 0.123/1.00 Kwin 0.080/0.00 twin 0.100/1.00 lin 0.039/0.00
+34 1.0 K 0.251 obs_max 0.427 | nominal 0.039/0.00 Kstatic 0.290/0.00 Kwin 0.273/0.00 twin 0.461/1.00 lin 0.077/0.00
+37 1.0 K 0.107 obs_max 0.176 | nominal 0.039/0.00 Kstatic 0.145/0.00 Kwin 0.126/0.00 twin 0.174/0.95 lin 0.080/0.00
+41 1.0 K 0.153 obs_max 0.254 | nominal 0.039/0.00 Kstatic 0.192/0.00 Kwin 0.179/0.00 twin 0.272/1.00 lin 0.039/0.00
+43 1.0 K 0.068 obs_max 0.145 | nominal 0.039/0.00 Kstatic 0.106/0.00 Kwin 0.082/0.00 twin 0.143/0.90 lin 0.073/0.00
