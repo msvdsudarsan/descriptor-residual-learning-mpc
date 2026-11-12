@@ -1,4 +1,0 @@
-case9 calibration sets done
-case9 n 10 sets 400 level 0.9091 marginal mean [0.906 0.906 0.906 0.906 0.906] joint scaled 0.907 joint per-step 0.887 shifted [0.182 0.171 0.155 0.13  0.103]
-case9 n 20 sets 400 level 0.9524 marginal mean [0.951 0.951 0.95  0.951 0.95 ] joint scaled 0.951 joint per-step 0.937 shifted [0.229 0.215 0.195 0.164 0.13 ]
-case9 n 40 sets 200 level 0.9512 marginal mean [0.952 0.951 0.951 0.952 0.951] joint scaled 0.952 joint per-step 0.937 shifted [0.221 0.207 0.185 0.156 0.126]
