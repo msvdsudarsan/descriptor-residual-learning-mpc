@@ -1,7 +1,0 @@
-case39 pq fit done; residual-target rms 5.579614418640941 val rmse after fit 0.105116727393496 active terms 108 / 130 time 34.76390194892883
-code/ac_model.py:249: NumbaPerformanceWarning: [1m[1m[1m'@' is faster on contiguous arrays, called on (Array(float64, 2, 'A', False, aligned=True), Array(float64, 1, 'C', False, aligned=True))[0m[0m[0m
-  z2 = tangent_z(z, Jinv, delta, d2, net) if mode == 0 else solve_z(z, d2, fac, net, 1e-10, 15)[0]
-{"case": "case39", "tag": "pq", "ratio_1s_A1_over_A0": 0.3436838265805941, "ratio_1s_A2_over_A0": 0.3482384968368788, "paired_ratio_ci": {"A2": [0.2616017070381847, 0.18058081193516584, 0.3444729126086948], "A1": [0.2617996365942982, 0.17952524110642587, 0.3427835507450248]}}
-A0 1s state rmse 1.6751977991948916 ang rms 1s 0.03334639360314803 V rms 1s 0.03018146927936021 gmax mean/max 0.031021189350996122 0.6427107484921546
-A1 1s state rmse 0.57573838990669 ang rms 1s 0.02075322852056024 V rms 1s 0.02979436502086841 gmax mean/max 0.02353273377890677 0.643858933187694
-A2 1s state rmse 0.5833683634960766 ang rms 1s 0.0209732533544853 V rms 1s 0.0300554975207121 gmax mean/max 1.2610590074954337e-11 9.92706472580096e-11
