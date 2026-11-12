@@ -1,0 +1,14 @@
+code/network_experiments.py:238: NumbaPerformanceWarning: '@' is faster on contiguous arrays, called on (Array(float64, 2, 'A', False, aligned=True), Array(float64, 1, 'C', False, aligned=True))
+  J0 = mpc_cost_net(Uf, de0, w0, th0, uprev, N, Ts, nsub, mode, use_res, coef, Pd, lf, lt, lb, gbus, bg, M, Dphys, Pm, kappa, fric,
+case39 0 {'C0': 2.0358, 'A0': 2.1473, 'A2': 1.9557}
+case39 1 {'C0': 1.9921, 'A0': 2.1235, 'A2': 1.9382}
+case39 2 {'C0': 1.9693, 'A0': 2.0027, 'A2': 1.8956}
+case39 3 {'C0': 1.835, 'A0': 1.9119, 'A2': 1.7463}
+case39 4 {'C0': 1.776, 'A0': 1.834, 'A2': 1.6942}
+case39 5 {'C0': 1.7488, 'A0': 1.8497, 'A2': 1.6887}
+case39 6 {'C0': 2.0137, 'A0': 2.0479, 'A2': 1.9496}
+case39 7 {'C0': 1.8515, 'A0': 1.9942, 'A2': 1.7862}
+case39 8 {'C0': 2.0428, 'A0': 2.1463, 'A2': 1.9629}
+case39 9 {'C0': 2.078, 'A0': 2.1992, 'A2': 2.0171}
+case39 10 {'C0': 2.2015, 'A0': 2.2456, 'A2': 2.152}
+case39 11 {'C0': 2.0204, 'A0': 2.1168, 'A2': 1.9381}

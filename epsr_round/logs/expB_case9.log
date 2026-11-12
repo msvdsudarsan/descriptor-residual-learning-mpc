@@ -1,0 +1,8 @@
+code/network_benchmark.py:179: NumbaPerformanceWarning: '@' is faster on contiguous arrays, called on (Array(float64, 2, 'A', False, aligned=True), Array(float64, 1, 'C', False, aligned=True))
+  th2 = tangent_theta(theta, Jinv, delta, d2, gbus, bg) if mode == 0 else solve_theta(theta, d2, Pd, lf, lt, lb, gbus, bg, 1e-10, 12)[0]
+1 model<=eps 0.70 online traj cov 0.70 window cov 0.935 max ratio 1.046
+2 model<=eps 0.40 online traj cov 0.40 window cov 0.850 max ratio 1.087
+4 model<=eps 0.50 online traj cov 0.55 window cov 0.892 max ratio 1.148
+5 model<=eps 0.55 online traj cov 0.55 window cov 0.877 max ratio 1.070
+7 model<=eps 0.40 online traj cov 0.45 window cov 0.842 max ratio 1.094
+8 model<=eps 0.50 online traj cov 0.55 window cov 0.858 max ratio 1.164
