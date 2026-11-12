@@ -1,0 +1,12 @@
+case9 kappa0 (lowest order, rms over 2*ng comps) = 1.0782; q0 = 0.02384; smallest linear step kappa0*s=q0: s = 0.0221
+kappa_fd at equilibrium state per step: {0.75: 1.0286, 0.9: 1.0282, 0.95: 1.0281, 1.01: 1.0281, 1.02: 1.0281, 1.03: 1.0281, 1.05: 1.0281, 1.1: 1.028, 1.25: 1.0281, 1.5: 1.0286}
+case9 mu 0.75 done 9.2
+case9 mu 0.9 done 18.2
+case9 mu 0.95 done 26.9
+case9 mu 1.01 done 36.1
+case9 mu 1.02 done 45.0
+case9 mu 1.03 done 54.8
+case9 mu 1.05 done 64.6
+case9 mu 1.1 done 74.5
+case9 mu 1.25 done 83.4
+case9 mu 1.5 done 92.8
