@@ -1,3 +1,0 @@
-calibration,n_cal,quantity,coverage,ci95_half_width
-limit 23 deg policy; envelope n=40,40,marginal step 3 on 100 fresh runs,0.94,nan
-limit 23 deg policy; envelope n=40,40,steps 1-5 jointly (per-step envelopes),0.85,nan
