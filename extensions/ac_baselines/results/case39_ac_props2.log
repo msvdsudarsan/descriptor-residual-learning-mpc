@@ -1,4 +1,0 @@
-{'model': 'lossless', 'fac': (0.7, 1.4), 'states': 100, 'worst_ratio': np.float64(0.5669284578158039)}
-{'model': 'AC np=0 nq=0', 'fac': (0.7, 1.4), 'states': 100, 'worst_ratio': np.float64(0.6145834081426271), 'worst_V_ratio': np.float64(0.7985573175216587), 'perturbed_solves_failed': 11}
-{'model': 'AC np=2 nq=2', 'fac': (0.7, 1.4), 'states': 100, 'worst_ratio': np.float64(0.5526365349211937), 'worst_V_ratio': np.float64(0.2508694193111949), 'perturbed_solves_failed': 12}
-{'model': 'AC np=0 nq=0', 'fac': (1.4, 1.9), 'states': 0, 'worst_ratio': 0.0, 'worst_V_ratio': 0.0, 'perturbed_solves_failed': 0}

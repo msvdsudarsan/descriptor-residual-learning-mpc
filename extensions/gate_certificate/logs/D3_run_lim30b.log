@@ -1,3 +1,0 @@
-eps_prod (rad) [0.         0.01430039 0.02696397 0.03719241 0.04678291 0.05682734]  deg [0.         0.81935205 1.54492179 2.13096801 2.68046318 3.25596674]
-limit 30 lambda 2 n 400: frac>0 0, frac>0.05 0, mean peak 23.020, mean w_rms 0.8951, argmax-peak sample mean 19.1, initial angle mean 21.957 deg; 156.8 s
-limit 30 lambda 3 n 400: frac>0 0, frac>0.05 0, mean peak 23.020, mean w_rms 0.8951, argmax-peak sample mean 19.2, initial angle mean 21.957 deg; 125.3 s
