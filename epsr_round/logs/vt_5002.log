@@ -1,0 +1,39 @@
+code/network_benchmark.py:179: NumbaPerformanceWarning: '@' is faster on contiguous arrays, called on (Array(float64, 2, 'A', False, aligned=True), Array(float64, 1, 'C', False, aligned=True))
+  th2 = tangent_theta(theta, Jinv, delta, d2, gbus, bg) if mode == 0 else solve_theta(theta, d2, Pd, lf, lt, lb, gbus, bg, 1e-10, 12)[0]
+{'line': 0, 'mincos': 0.9505, 'lhsD': np.float64(0.178), 'rhsD': np.float64(0.2668), 'viol': 0, 'KT': np.float64(0.1171), 'cert': np.float64(0.1225), 'viol_cert': 0, 'hmax': 0.0861, 'n': 21}
+{'line': 1, 'mincos': 0.9507, 'lhsD': np.float64(0.0876), 'rhsD': np.float64(0.1314), 'viol': 0, 'KT': np.float64(0.0747), 'cert': np.float64(0.077), 'viol_cert': 0, 'hmax': 0.0579, 'n': 21}
+{'line': 2, 'mincos': 0.9441, 'lhsD': np.float64(0.1166), 'rhsD': np.float64(0.2439), 'viol': 0, 'KT': np.float64(0.1407), 'cert': np.float64(0.1514), 'viol_cert': 0, 'hmax': 0.1321, 'n': 21}
+{'line': 3, 'mincos': 0.9492, 'lhsD': np.float64(0.1369), 'rhsD': np.float64(0.2755), 'viol': 0, 'KT': np.float64(0.1156), 'cert': np.float64(0.1224), 'viol_cert': 0, 'hmax': 0.1025, 'n': 21}
+{'line': 5, 'mincos': 0.949, 'lhsD': np.float64(0.0115), 'rhsD': np.float64(0.033), 'viol': 0, 'KT': np.float64(0.0242), 'cert': np.float64(0.0245), 'viol_cert': 0, 'hmax': 0.0228, 'n': 21}
+{'line': 6, 'mincos': 0.9507, 'lhsD': np.float64(0.002), 'rhsD': np.float64(0.0061), 'viol': 0, 'KT': np.float64(0.0071), 'cert': np.float64(0.0071), 'viol_cert': 0, 'hmax': 0.0065, 'n': 21}
+{'line': 7, 'mincos': 0.9497, 'lhsD': np.float64(0.018), 'rhsD': np.float64(0.0572), 'viol': 0, 'KT': np.float64(0.0515), 'cert': np.float64(0.0543), 'viol_cert': 0, 'hmax': 0.0555, 'n': 21}
+{'line': 8, 'mincos': 0.9494, 'lhsD': np.float64(0.0083), 'rhsD': np.float64(0.0282), 'viol': 0, 'KT': np.float64(0.0666), 'cert': np.float64(0.0738), 'viol_cert': 0, 'hmax': 0.0746, 'n': 21}
+{'line': 9, 'mincos': 0.9495, 'lhsD': np.float64(0.026), 'rhsD': np.float64(0.0699), 'viol': 0, 'KT': np.float64(0.0821), 'cert': np.float64(0.1203), 'viol_cert': 0, 'hmax': 0.1185, 'n': 21}
+{'line': 10, 'mincos': 0.9506, 'lhsD': np.float64(0.0107), 'rhsD': np.float64(0.0317), 'viol': 0, 'KT': np.float64(0.0493), 'cert': np.float64(0.0732), 'viol_cert': 0, 'hmax': 0.074, 'n': 21}
+{'line': 11, 'mincos': 0.9504, 'lhsD': np.float64(0.0129), 'rhsD': np.float64(0.0473), 'viol': 0, 'KT': np.float64(0.0771), 'cert': np.float64(0.1076), 'viol_cert': 0, 'hmax': 0.1068, 'n': 21}
+{'line': 12, 'mincos': 0.9415, 'lhsD': np.float64(0.0421), 'rhsD': np.float64(0.1479), 'viol': 0, 'KT': np.float64(0.1086), 'cert': np.float64(0.1152), 'viol_cert': 0, 'hmax': 0.1075, 'n': 21}
+{'line': 14, 'mincos': 0.9506, 'lhsD': np.float64(0.0063), 'rhsD': np.float64(0.0231), 'viol': 0, 'KT': np.float64(0.0472), 'cert': np.float64(0.0568), 'viol_cert': 0, 'hmax': 0.0579, 'n': 21}
+{'line': 15, 'mincos': 0.9504, 'lhsD': np.float64(0.0282), 'rhsD': np.float64(0.0444), 'viol': 0, 'KT': np.float64(0.0245), 'cert': np.float64(0.0247), 'viol_cert': 0, 'hmax': 0.0168, 'n': 21}
+{'line': 16, 'mincos': 0.9505, 'lhsD': np.float64(0.0227), 'rhsD': np.float64(0.0357), 'viol': 0, 'KT': np.float64(0.0234), 'cert': np.float64(0.0236), 'viol_cert': 0, 'hmax': 0.0166, 'n': 21}
+{'line': 17, 'mincos': 0.944, 'lhsD': np.float64(0.032), 'rhsD': np.float64(0.1025), 'viol': 0, 'KT': np.float64(0.0928), 'cert': np.float64(0.1003), 'viol_cert': 0, 'hmax': 0.0999, 'n': 21}
+{'line': 18, 'mincos': 0.9494, 'lhsD': np.float64(0.0292), 'rhsD': np.float64(0.0926), 'viol': 0, 'KT': np.float64(0.0914), 'cert': np.float64(0.0974), 'viol_cert': 0, 'hmax': 0.0972, 'n': 21}
+{'line': 20, 'mincos': 0.9507, 'lhsD': np.float64(0.0001), 'rhsD': np.float64(0.0002), 'viol': 0, 'KT': np.float64(0.0019), 'cert': np.float64(0.0019), 'viol_cert': 0, 'hmax': 0.0018, 'n': 21}
+{'line': 21, 'mincos': 0.9507, 'lhsD': np.float64(0.0001), 'rhsD': np.float64(0.0002), 'viol': 0, 'KT': np.float64(0.0027), 'cert': np.float64(0.0027), 'viol_cert': 0, 'hmax': 0.0026, 'n': 21}
+{'line': 22, 'mincos': 0.9489, 'lhsD': np.float64(0.0377), 'rhsD': np.float64(0.1283), 'viol': 0, 'KT': np.float64(0.102), 'cert': np.float64(0.1078), 'viol_cert': 0, 'hmax': 0.1019, 'n': 21}
+{'line': 23, 'mincos': 0.9503, 'lhsD': np.float64(0.0166), 'rhsD': np.float64(0.0389), 'viol': 0, 'KT': np.float64(0.0241), 'cert': np.float64(0.0243), 'viol_cert': 0, 'hmax': 0.0213, 'n': 21}
+{'line': 24, 'mincos': 0.9442, 'lhsD': np.float64(0.0762), 'rhsD': np.float64(0.1776), 'viol': 0, 'KT': np.float64(0.1475), 'cert': np.float64(0.157), 'viol_cert': 0, 'hmax': 0.1149, 'n': 21}
+{'line': 25, 'mincos': 0.9503, 'lhsD': np.float64(0.0858), 'rhsD': np.float64(0.174), 'viol': 0, 'KT': np.float64(0.0815), 'cert': np.float64(0.0847), 'viol_cert': 0, 'hmax': 0.0732, 'n': 21}
+{'line': 27, 'mincos': 0.9483, 'lhsD': np.float64(0.0995), 'rhsD': np.float64(0.2188), 'viol': 0, 'KT': np.float64(0.1374), 'cert': np.float64(0.1469), 'viol_cert': 0, 'hmax': 0.1206, 'n': 21}
+{'line': 28, 'mincos': 0.9505, 'lhsD': np.float64(0.0062), 'rhsD': np.float64(0.0192), 'viol': 0, 'KT': np.float64(0.0228), 'cert': np.float64(0.023), 'viol_cert': 0, 'hmax': 0.0184, 'n': 21}
+{'line': 29, 'mincos': 0.9495, 'lhsD': np.float64(0.0204), 'rhsD': np.float64(0.0626), 'viol': 0, 'KT': np.float64(0.0773), 'cert': np.float64(0.0801), 'viol_cert': 0, 'hmax': 0.0667, 'n': 21}
+{'line': 30, 'mincos': 0.9507, 'lhsD': np.float64(0.0101), 'rhsD': np.float64(0.0263), 'viol': 0, 'KT': np.float64(0.0125), 'cert': np.float64(0.0125), 'viol_cert': 0, 'hmax': 0.0093, 'n': 21}
+{'line': 34, 'mincos': 0.93, 'lhsD': np.float64(0.1887), 'rhsD': np.float64(0.4104), 'viol': 0, 'KT': np.float64(0.2512), 'cert': np.float64(0.2878), 'viol_cert': 0, 'hmax': 0.2223, 'n': 21}
+{'line': 35, 'mincos': 0.9507, 'lhsD': np.float64(0.0185), 'rhsD': np.float64(0.0564), 'viol': 0, 'KT': np.float64(0.0207), 'cert': np.float64(0.0209), 'viol_cert': 0, 'hmax': 0.0183, 'n': 21}
+{'line': 37, 'mincos': 0.9487, 'lhsD': np.float64(0.0582), 'rhsD': np.float64(0.1734), 'viol': 0, 'KT': np.float64(0.1063), 'cert': np.float64(0.1129), 'viol_cert': 0, 'hmax': 0.1097, 'n': 21}
+{'line': 39, 'mincos': 0.9507, 'lhsD': np.float64(0.0282), 'rhsD': np.float64(0.0746), 'viol': 0, 'KT': np.float64(0.0353), 'cert': np.float64(0.0359), 'viol_cert': 0, 'hmax': 0.0302, 'n': 21}
+{'line': 41, 'mincos': 0.9488, 'lhsD': np.float64(0.0946), 'rhsD': np.float64(0.2413), 'viol': 0, 'KT': np.float64(0.1616), 'cert': np.float64(0.1726), 'viol_cert': 0, 'hmax': 0.1184, 'n': 21}
+{'line': 42, 'mincos': 0.95, 'lhsD': np.float64(0.052), 'rhsD': np.float64(0.1187), 'viol': 0, 'KT': np.float64(0.0703), 'cert': np.float64(0.0725), 'viol_cert': 0, 'hmax': 0.0618, 'n': 21}
+{'line': 43, 'mincos': 0.9498, 'lhsD': np.float64(0.0699), 'rhsD': np.float64(0.1605), 'viol': 0, 'KT': np.float64(0.0667), 'cert': np.float64(0.0691), 'viol_cert': 0, 'hmax': 0.0666, 'n': 21}
+{'line': 44, 'mincos': 0.9298, 'lhsD': np.float64(0.1347), 'rhsD': np.float64(0.3022), 'viol': 0, 'KT': np.float64(0.2891), 'cert': np.float64(0.3329), 'viol_cert': 0, 'hmax': 0.23, 'n': 21}
+min cos over all segments 0.9298078742786786
+violations of twin bound 0 of 735 ; violations of certificate 0

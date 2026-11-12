@@ -1,0 +1,37 @@
+code/network_benchmark.py:179: NumbaPerformanceWarning: '@' is faster on contiguous arrays, called on (Array(float64, 2, 'A', False, aligned=True), Array(float64, 1, 'C', False, aligned=True))
+  th2 = tangent_theta(theta, Jinv, delta, d2, gbus, bg) if mode == 0 else solve_theta(theta, d2, Pd, lf, lt, lb, gbus, bg, 1e-10, 12)[0]
+0 model<=eps 0.90 online traj cov 0.90 window cov 0.985 max ratio 1.027
+1 model<=eps 0.95 online traj cov 1.00 window cov 1.000 max ratio 0.993
+2 model<=eps 0.70 online traj cov 0.70 window cov 0.935 max ratio 1.092
+3 model<=eps 1.00 online traj cov 1.00 window cov 1.000 max ratio 0.860
+5 model<=eps 0.95 online traj cov 1.00 window cov 1.000 max ratio 0.682
+6 model<=eps 1.00 online traj cov 1.00 window cov 1.000 max ratio 0.929
+7 model<=eps 1.00 online traj cov 1.00 window cov 1.000 max ratio 0.680
+8 model<=eps 1.00 online traj cov 1.00 window cov 1.000 max ratio 0.708
+9 model<=eps 1.00 online traj cov 1.00 window cov 1.000 max ratio 0.738
+10 model<=eps 0.90 online traj cov 1.00 window cov 1.000 max ratio 0.695
+11 model<=eps 0.90 online traj cov 1.00 window cov 1.000 max ratio 0.802
+12 model<=eps 1.00 online traj cov 1.00 window cov 1.000 max ratio 0.878
+14 model<=eps 0.95 online traj cov 1.00 window cov 1.000 max ratio 0.608
+15 model<=eps 1.00 online traj cov 1.00 window cov 1.000 max ratio 0.641
+16 model<=eps 0.95 online traj cov 1.00 window cov 1.000 max ratio 0.623
+17 model<=eps 1.00 online traj cov 1.00 window cov 1.000 max ratio 0.827
+18 model<=eps 1.00 online traj cov 1.00 window cov 1.000 max ratio 0.817
+20 model<=eps 1.00 online traj cov 1.00 window cov 1.000 max ratio 0.905
+21 model<=eps 1.00 online traj cov 1.00 window cov 1.000 max ratio 0.758
+22 model<=eps 0.95 online traj cov 1.00 window cov 1.000 max ratio 0.892
+23 model<=eps 1.00 online traj cov 1.00 window cov 1.000 max ratio 0.604
+24 model<=eps 1.00 online traj cov 1.00 window cov 1.000 max ratio 0.916
+25 model<=eps 1.00 online traj cov 1.00 window cov 1.000 max ratio 0.798
+27 model<=eps 1.00 online traj cov 1.00 window cov 1.000 max ratio 0.934
+28 model<=eps 1.00 online traj cov 1.00 window cov 1.000 max ratio 0.527
+29 model<=eps 1.00 online traj cov 1.00 window cov 1.000 max ratio 0.710
+30 model<=eps 0.95 online traj cov 1.00 window cov 1.000 max ratio 0.723
+34 model<=eps 0.85 online traj cov 0.85 window cov 0.977 max ratio 1.041
+35 model<=eps 1.00 online traj cov 1.00 window cov 1.000 max ratio 0.647
+37 model<=eps 0.95 online traj cov 1.00 window cov 1.000 max ratio 0.970
+39 model<=eps 1.00 online traj cov 1.00 window cov 1.000 max ratio 0.859
+41 model<=eps 0.95 online traj cov 0.95 window cov 0.992 max ratio 1.004
+42 model<=eps 1.00 online traj cov 1.00 window cov 1.000 max ratio 0.813
+43 model<=eps 1.00 online traj cov 1.00 window cov 1.000 max ratio 0.908
+44 model<=eps 0.90 online traj cov 0.90 window cov 0.985 max ratio 1.024
