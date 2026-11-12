@@ -1,0 +1,13 @@
+noise_sigma,method,ratio_to_A0,active_terms
+0.001,OURS (sparse; weak form),0.19517362,118
+0.001,SF (sparse; strong form),0.1760861,97
+0.001,RIDGE (dense; weak form),0.195248,130
+0.001,MLP (2x32; weak form),0.19794941,-1
+0.01,OURS (sparse; weak form),0.19624677,67
+0.01,SF (sparse; strong form),0.17782648,74
+0.01,RIDGE (dense; weak form),0.19600116,130
+0.01,MLP (2x32; weak form),0.19622499,-1
+0.03,OURS (sparse; weak form),0.19533111,45
+0.03,SF (sparse; strong form),0.16860709,71
+0.03,RIDGE (dense; weak form),0.19701454,130
+0.03,MLP (2x32; weak form),0.1851125,-1
