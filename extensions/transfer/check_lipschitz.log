@@ -1,2 +1,0 @@
-case9 old L_f(2-norm)=967 | observed ||JF||_2 max=72.3 | new inf-norm bound=317.4 | observed ||JF||_inf max=100.1 | ratio new/observed=3.17
-case39 old L_f(2-norm)=1707 | observed ||JF||_2 max=108.3 | new inf-norm bound=317.4 | observed ||JF||_inf max=174.9 | ratio new/observed=1.81
