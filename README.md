@@ -1,6 +1,6 @@
 # Physics-informed residual learning of descriptor power-network models with enforced algebraic constraints: prediction, contingency margins and a control test
 
-Code, data and results for the manuscript prepared for *Electric Power Systems Research* (Elsevier), release 2.0.0, October 2026 (contingency extension added November 2026). Archived on Zenodo, DOI: https://doi.org/10.5281/zenodo.24142079.
+Code, data and results for the manuscript prepared for *Electric Power Systems Research* (Elsevier), release 2.1.0, November 2026. This release adds the recalibrated-physics comparison in the voltage-magnitude variant (`extensions/ac_recal/`) and the exploratory contingency diagnostics (`extensions/contingency_mechanism/`). The previous release 2.0.0 is archived on Zenodo, DOI: https://doi.org/10.5281/zenodo.24142079; it remains available and does not contain these two folders.
 
 ## Contents
 | Folder | Content |
@@ -12,6 +12,8 @@ Code, data and results for the manuscript prepared for *Electric Power Systems R
 | `tests/` | `test_consistency.py` (code against claims), `test_worked_example.py` (worked example against the stored results and the numbers printed in the manuscript), `test_transfer_lemma.py` (Proposition 5: row sums and nonnegativity of the sensitivity matrix, case9 and case39), `test_standard_facts.py` (exact checks of the Gronwall sharpness example and of split-conformal coverage) |
 | `tools/` | `check_paper_values.py` verifies that the numbers printed in the manuscript match `results/`; `regularity_chain_check.py` checks Proposition 3 (manifold sensitivity and Lipschitz bound) numerically |
 | `extensions/` | Additions: checks of the row-stochastic sensitivity matrix and margin transfer, tube-bound study, AC-variant and learned-map baselines, gate calibration and certificate, hybrid correction (see `extensions/README.md`); not part of `run_all.sh` |
+| `extensions/ac_recal/` | Recalibrated-physics comparison in the voltage-magnitude (AC algebraic) variant: physics-only, recalibrated physics and library residual at 24 operating points (case9 and case39, constant-power and constant-impedance loads, loading 0.7 to 1.2); protocol written before the runs, scripts, 24 raw JSON files, logs, summary CSV and figure; see `extensions/ac_recal/README.md`. An AC algebraic-model extension, not validation against an independent AC dynamic simulator or measured data; no outage or margin results; not part of `run_all.sh` |
+| `extensions/contingency_mechanism/` | Exploratory diagnostics of the case39 outage lines below nominal coverage (re-derivation of the 35 stored margins and coverages, per-line features); no theorem or screening rule is claimed |
 | `extensions/contingency/` and `run_checks.sh` | Contingency extension: contingency-conditioned prediction margin (reduced lossless case9/case39 only): code, raw JSON, summary CSV, logs, value checks; see `extensions/contingency/README.md` |
 | `paper/` | `values_used.json` (the numerical values quoted in the manuscript, checked by `tools/check_paper_values.py`). The manuscript and its supplementary PDF are not part of this repository |
 
@@ -31,7 +33,7 @@ All verification described here was run by the author; independent reproduction 
 
 Status of the evidence (kept separate; all author-run, none independent): (1) `bash run_checks.sh --quick`: run, passed; (2) `bash run_checks.sh --full`: exit 0 in 616 s on a fresh copy, 2,355 contingency values with 0 mismatches, and all 105 direct-calibration score vectors regenerated and equal to the stored ones; (3) `bash run_all.sh`: exit 0 on the same copy, 690 manuscript values with 0 differences and 47 calibration values with 0 differences (34 timing values differ with machine load and are not compared); (4) `pytest`: 33 passed. Logs: `results/final_checks/verification_final/`. The earlier records in `results/final_checks/verification_earlier/` (31 tests) are kept as historical and are superseded by these. The projection ablation described at the end of this file was run once, after these checks, and lies outside them. No clean-machine or independent reproduction is claimed.
 
-Details of the quick run: the quick run passed (exit 0, 28 tests, all value checks, 0 mismatches in the case9 rerun). `bash run_checks.sh --full` and `run_all.sh` were rerun end to end on this archive (before the projection-ablation script was added; see above); the full-run record of the earlier package (`RUN_RECORD.md`, sections A-F) is historical evidence and is kept separate. The Zenodo DOI of release 2.0.0 is 10.5281/zenodo.24142079 (it is not the DOI of release 1.0.0).
+Details of the quick run: the quick run passed (exit 0, all value checks, 0 mismatches in the case9 rerun); the final `pytest` run has 33 tests. `bash run_checks.sh --full` and `run_all.sh` were rerun end to end on this archive (before the projection-ablation script was added; see above); the full-run record of the earlier package (`RUN_RECORD.md`, sections A-F) is historical evidence and is kept separate. The Zenodo DOI of release 2.0.0 is 10.5281/zenodo.24142079 (it is not the DOI of release 1.0.0).
 
 ## Model summary
 * Scalar benchmark: one angle/frequency pair and one algebraic voltage-like variable; the physics model has wrong gains and omits the cubic term.
@@ -90,7 +92,7 @@ Data: MATPOWER case9 and case39 only (public benchmark networks); all trajectori
 
 ## Notes added in the 4 Nov 2026 correction pass
 - `requirements.txt` now lists `pytest`; tested with the versions in `RUN_RECORD.md` section J.
-- `figures/graphical_abstract.*` are the copies submitted with the manuscript. `code/make_pipeline_figure.py` writes an earlier layout of the graphical abstract and would overwrite them.
+- `figures/graphical_abstract.*` are the copies submitted with the manuscript (written by `code/make_graphical_abstract.py`; the one-second wording was replaced by the mean per-run state-RMSE ratio over ten horizons, which is what the 0.17 to 0.24 are). `code/make_pipeline_figure.py` writes an earlier layout of the graphical abstract and would overwrite them.
 - `figures/Figure_draws.pdf` and `figures/Figure_certificate.pdf` were regenerated with `epsr_round/make_figs.py` (OUT directory changed only in a temporary copy) and are pixel-identical at 150 dpi to the figures in the manuscript source (the PDF bytes differ only in metadata).
 - Duplicated files are listed in `PACKAGE_INVENTORY.md`.
 

@@ -7,12 +7,11 @@ authors:
     given-names: Sri Venkata Durga Sudarsan
     orcid: "https://orcid.org/0009-0001-2126-6428"
     affiliation: "Dr. RVR NRI Institute of Technology (Deemed to be University), Pothavarappadu, Agiripalli, Andhra Pradesh, India"
-version: "2.0.0"
-date-released: "2026-10-26"
+version: "2.1.0"
+date-released: "2026-11-12"
 license: MIT
 repository-code: "https://github.com/msvdsudarsan/descriptor-residual-learning-mpc"
-doi: "10.5281/zenodo.24142079"
 identifiers:
   - type: doi
     value: "10.5281/zenodo.24142079"
-    description: "Zenodo archive of release 2.0.0"
+    description: "Zenodo archive of the previous release 2.0.0"
