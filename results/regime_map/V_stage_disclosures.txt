@@ -1,3 +1,0 @@
-case9: max abs diff refit vs stored coef_nominal = 6.512e-12; scale max|stored| = 14.812; relative = 4.397e-13; supplementary diagnostic tolerance 1e-9 (not a protocol criterion) -> PASS_WITH_NUMERICAL_ROUNDING
-case39: max abs diff refit vs stored coef_nominal = 2.055e-09; scale max|stored| = 18.041; relative = 1.139e-10; supplementary diagnostic tolerance 1e-9 (not a protocol criterion) -> CHECK
-Seed 9400 note: the H1 assertion drew matched random numbers from default_rng(9400) for M0/M1/M2 and compared them. No test trajectory was simulated and no test metric computed. This deviates from the literal wording "test seed not touched".
