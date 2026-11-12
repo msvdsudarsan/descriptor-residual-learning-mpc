@@ -1,4 +1,0 @@
-case9 learned residual : theta_bar=2.78 d0=3.20 a_om=1.70 kappa_e=0.153 ;  min over kappa of lambda_max(Q) = 1.415  (NO strict Lyapunov of this form: Q not negative definite for any kappa)
-case9 physics only : theta_bar=0.00 d0=3.20 a_om=0.00 kappa_e=0.153 ;  min over kappa of lambda_max(Q) = -0.756  (strict decay possible)
-case39 learned residual : theta_bar=2.43 d0=3.20 a_om=1.74 kappa_e=0.211 ;  min over kappa of lambda_max(Q) = 1.288  (NO strict Lyapunov of this form: Q not negative definite for any kappa)
-case39 physics only : theta_bar=0.00 d0=3.20 a_om=0.00 kappa_e=0.211 ;  min over kappa of lambda_max(Q) = -0.594  (strict decay possible)
